@@ -9,6 +9,7 @@
 class Floor : public Space
 {
 	public:
+		Floor();
 		Floor(int, int);
 
 };

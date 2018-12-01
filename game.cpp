@@ -10,8 +10,6 @@ Game::Game()
 		for(int j = 0; j < 7; j++)
 		{
 			shared_ptr<Floor> f1;
-			f1->setXCoord(i);
-			f1->setYCoord(j);
 			brewery[i][j] = f1;
 		}
 	}
