@@ -3,6 +3,10 @@
 #ifndef SPACE_HPP
 #define SPACE_HPP
 
+#include <memory>
+using std::shared_ptr;
+using std::make_shared;
+
 #include <string>
 using std::string;
 
