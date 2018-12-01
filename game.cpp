@@ -23,7 +23,8 @@ void Game::printBrewery()
 	{
 		for(int j = 0; j < 7; j++)
 		{
-			cout << brewery[i][j]->getName;
+			string s = brewery[i][j]->getName();
+			cout << s;
 		}
 		cout << endl;
 	}
