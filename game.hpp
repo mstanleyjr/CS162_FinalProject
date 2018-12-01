@@ -14,9 +14,9 @@ private:
 
 
 	public:
-		Game(); ;This will initialize the board
+		Game();
 		void printBrewery();
-		; And access and do all funcs
+		
 };
 
 #endif
