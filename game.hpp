@@ -9,7 +9,7 @@
 
 class Game
 {
-	prvate:
+private:
 		shared_ptr<Space> brewery[9][6];
 
 
@@ -19,4 +19,4 @@ class Game
 		; And access and do all funcs
 };
 
-#endif 
+#endif
