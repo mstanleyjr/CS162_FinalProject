@@ -17,4 +17,6 @@ class Game
 		Game(); ;This will initialize the board
 		void printBrewery();
 		; And access and do all funcs
-}
+};
+
+#endif 
