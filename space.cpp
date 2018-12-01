@@ -52,9 +52,9 @@ Space* Space::getEast()
 	return this->east;
 }
 
-Space* Space::getSouth()
+Space* Space::getWest()
 {
-	return this->south;
+	return this->west;
 }
 
 string Space::getName()
