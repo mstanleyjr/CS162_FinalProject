@@ -9,7 +9,7 @@ Game::Game()
 	{
 		for(int j = 0; j < 7; j++)
 		{
-			shared_ptr<Floor> f1(i, j);
+			shared_ptr<Floor> f1 = Floor(i, j);
 			brewery[i][j] = f1;
 		}
 	}
