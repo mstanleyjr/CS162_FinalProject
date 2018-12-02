@@ -2,6 +2,8 @@
 
 
 #include "game.hpp"
+#include "space.hpp"
+#include "floor.hpp"
 
 int main()
 

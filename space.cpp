@@ -9,7 +9,7 @@ Space::Space()
 	setSouth(NULL);
 	setEast(NULL);
 	setWest(NULL);
-	setName("");
+	setName("Space");
 	setActionable(false);
 	setFilled(false);
 	setContents("None");
