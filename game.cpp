@@ -33,7 +33,7 @@ Game::~Game()
 		delete[] brewery[i];
 	}
 	delete[] brewery;
-	brewery = NULL:
+	brewery = NULL;
 }
 
 void Game::printBrewery()
