@@ -19,6 +19,7 @@ private:
 		Game();
 		~Game();
 		void printBrewery();
+		void setPointers(int, int);
 
 };
 
