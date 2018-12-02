@@ -39,6 +39,7 @@ Game::Game()
 			brewery[r][c] = new Wall(r, c);
 		}
 	}
+}
 
 Game::~Game()
 {
