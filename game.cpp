@@ -96,6 +96,11 @@ void Game::printBrewery()
 {
 	for(int i = 0; i < 10; i++)
 	{
+		cout << "  " << i << "  ";
+	}
+	cout << endl;
+	for(int i = 0; i < 10; i++)
+	{
 		for(int j = 0; j < 7; j++)
 		{
 		cout << this->brewery[i][j]->getName();
