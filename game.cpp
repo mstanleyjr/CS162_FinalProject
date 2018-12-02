@@ -22,12 +22,15 @@ Game::Game()
 
 
 
-	for(int c = 0; c < 7; c += 6)
+	for(int c = 0; c < 7; c +=+)
 	{
-		delete brewery[0][c];
-		brewery[0][c] = NULL;
-		brewery[0][c] = new Wall(0, c);
-		brewery[0][c]->makeCeiling();
+		for(int r = 0; r < 10; r += 9)
+		{
+			delete brewery[r][c];
+			brewery[r][c] = NULL;
+			brewery[r][c] = new Wall(r, c);
+			brewery[r][c]->makeCeiling();
+		}
 	}
 
 	for(int r = 0; r < 10; r++)
