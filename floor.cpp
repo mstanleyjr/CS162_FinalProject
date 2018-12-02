@@ -4,12 +4,12 @@
 
 Floor::Floor()
 {
-	setName("12345");
+	setName("     ");
 }
 
 Floor::Floor(int x, int y)
 {
-	setName("12345");
+	setName("     ");
 	setXCoord(x);
 	setYCoord(y);
 }

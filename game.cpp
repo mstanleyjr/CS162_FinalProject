@@ -29,6 +29,14 @@ Game::Game()
 			brewery[i][j] = new Floor(i, j);
 		}
 	}
+
+	for(int c = 0; c < 7; c++)
+	{
+		delete brewery[0][c];
+		brewery[0][c] = NULL;
+		brewery[0][c] = new Wall(0, c);
+		brewery[0][c]->makeCeiling();
+	}
 }
 
 Game::~Game()
