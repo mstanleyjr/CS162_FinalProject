@@ -70,19 +70,19 @@ void Game::setPointers(int r, int c)
 {
 	if(r != 0)
 	{
-		brewery[r][c]->setNorth(brewery*[r -1][c]);
+		brewery[r][c]->setNorth(brewery[r - 1][c]);
 	}
 	if(r != 9)
 	{
-		brewery[r][c]->setSouth(brewery*[r + 1][c]);
+		brewery[r][c]->setSouth(brewery[r + 1][c]);
 	}
 	if(c != 0)
 	{
-		brewery[r][c]->setWest(brewery*[r][c - 1]);
+		brewery[r][c]->setWest(brewery[r][c - 1]);
 	}
 	if(c != 6)
 	{
-		brewery[r][c]->setEast(brewery*[r][c + 1]);
+		brewery[r][c]->setEast(brewery[r][c + 1]);
 	}
 }
 
