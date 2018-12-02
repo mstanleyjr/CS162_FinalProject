@@ -10,13 +10,13 @@
 class Game
 {
 private:
-		shared_ptr<Space> brewery[9][6];
+		shared_ptr<Space>*** brewery
 
 
 	public:
 		Game();
 		void printBrewery();
-		
+
 };
 
 #endif
