@@ -54,6 +54,7 @@ class Space
 		int getXCoord();
 		void setYCoord(int);
 		int getYCoord();
+		virtual void makeCeiling() = 0;
 
 
 

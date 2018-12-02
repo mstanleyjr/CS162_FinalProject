@@ -11,7 +11,7 @@ class Wall : public Space
 	public:
 		Wall();
 		Wall(int, int);
-		void makeCeiling();
+		virtual void makeCeiling() override;
 
 };
 
