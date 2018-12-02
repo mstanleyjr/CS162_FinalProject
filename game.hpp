@@ -11,7 +11,7 @@
 class Game
 {
 private:
-		Space* brewery;
+		Space** brewery;
 
 
 	public:

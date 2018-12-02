@@ -6,7 +6,7 @@
 Game::Game()
 
 {
-	brewery = new Space[10];
+	brewery = new Space*[10];
 
 //	for(int i = 0; i < 10; i++)
 //	{
@@ -20,7 +20,7 @@ void Game::printBrewery()
 {
 	for(int i = 0; i < 10; i++)
 	{
-		cout << "in Print Brewery" << endl;
+
 		cout << this->brewery[i].getName();
 	}
 	cout << endl;
