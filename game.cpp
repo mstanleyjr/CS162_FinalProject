@@ -5,10 +5,18 @@
 
 Game::Game()
 {
-	brewery = new shared_ptr<Floor>**[10];
+	brewery = new shared_ptr<Space>**[10];
 	for(int i = 0; i < 10; i++)
 	{
-		brewery[i] = new shared_ptr<Floor>*[7];
+		brewery[i] = new shared_ptr<Space>*[7];
+	}
+
+	for(int i = 0; i < 10; i++)
+	{
+		for(int j = 0; j < 7; j++)
+		{
+			brewery[i][j] = make_shared<Floor>();
+		}
 	}
 }
 
