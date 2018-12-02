@@ -5,7 +5,11 @@
 
 Game::Game()
 {
-	this->brewery = new shared_ptr<Space[10]>;
+	brewery[10];
+	for(int i = 0; i < 10; i++)
+	{
+		brewery[i] = new shared_ptr<Space>();
+	}
 //	for(int i = 0; i < 10; i++)
 //	{
 //
