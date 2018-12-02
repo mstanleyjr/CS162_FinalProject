@@ -13,3 +13,8 @@ Floor::Floor(int x, int y)
 	setXCoord(x);
 	setYCoord(y);
 }
+
+void Floor::makeCeiling()
+{
+
+}
