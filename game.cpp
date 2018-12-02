@@ -45,9 +45,9 @@ Game::Game()
 	}
 
 	//Set Door
-	delete brewery[3][5];
-	brewery[3][5] = NULL;
-	brewery[3][5] = new Door(3, 5);
+	delete brewery[8][3];
+	brewery[8][3] = NULL;
+	brewery[8][3] = new Door(8, 3);
 
 	for(int r = 0; r < 10; r++)
 	{
@@ -94,7 +94,7 @@ void Game::setPointers(int r, int c)
 
 void Game::printBrewery()
 {
-	for(int i = 0; i < 10; i++)
+	for(int i = 0; i < 7; i++)
 	{
 		cout << "  " << i << "  ";
 	}
