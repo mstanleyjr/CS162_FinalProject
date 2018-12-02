@@ -15,7 +15,7 @@ Game::Game()
 	{
 		for(int j = 0; j < 7; j++)
 		{
-			brewery[i][j] = make_shared<Floor>();
+			brewery[i][j]* = make_shared<Floor>();
 		}
 	}
 }
@@ -26,7 +26,7 @@ void Game::printBrewery()
 	{
 		for(int j = 0; j < 7; j++)
 		{
-			string s = brewery[i][j]->getName();
+			string s = (brewery[i][j]->getName());
 			cout << s;
 		}
 		cout << endl;
