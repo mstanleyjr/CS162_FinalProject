@@ -19,12 +19,21 @@ Game::Game()
 		}
 	}
 
-//	for(int i = 0; i < 10; i++)
-//	{
-//
-//		brewery[i] = make_shared<Floor>();
-//	}
-	cout << "game created" << endl;
+
+}
+
+Game::~Game()
+{
+	for(int i = 0; i < 10; i++)
+	{
+		for(int j = 0; j < 7; j++)
+		{
+			delete brewery[i][j];
+		}
+		delete[] brewery[i];
+	}
+	delete[] brewery;
+	brewery = NULL:
 }
 
 void Game::printBrewery()
