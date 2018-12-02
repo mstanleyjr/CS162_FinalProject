@@ -17,5 +17,5 @@ Wall::Wall(int x, int y)
 
 void Wall::makeCeiling()
 {
-	setName("_____");
+	setName("-----");
 }

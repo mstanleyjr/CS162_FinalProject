@@ -22,7 +22,7 @@ Game::Game()
 
 
 
-	for(int c = 0; c < 7; c +=+)
+	for(int c = 0; c < 7; c++)
 	{
 		for(int r = 0; r < 10; r += 9)
 		{
