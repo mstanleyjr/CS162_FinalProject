@@ -7,6 +7,7 @@
 
 #include "floor.hpp"
 #include "space.hpp"
+#include "wall.hpp"
 
 class Game
 {
