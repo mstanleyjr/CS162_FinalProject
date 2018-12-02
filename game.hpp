@@ -11,7 +11,7 @@
 class Game
 {
 private:
-		shared_ptr<Space>* brewery;
+		Space** brewery;
 
 
 	public:

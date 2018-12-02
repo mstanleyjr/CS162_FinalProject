@@ -8,11 +8,7 @@
 int main()
 
 {
-	shared_ptr<Space>() spaces[10];
-	for(int i = 0; i < 10; i++)
-	{
-		cout << spaces[i]->getName();
-		cout << endl;
-	}
+	Game g1;
+	g1.printBrewery();
 	return 0;
 }
