@@ -39,27 +39,27 @@ void Space::setWest(Space* s)
 
 Space* Space::getNorth()
 {
-	return this->north;
+	return north;
 }
 
 Space* Space::getSouth()
 {
-	return this->south;
+	return south;
 }
 
 Space* Space::getEast()
 {
-	return this->east;
+	return east;
 }
 
 Space* Space::getWest()
 {
-	return this->west;
+	return west;
 }
 
 string Space::getName()
 {
-	return this->name;
+	return name;
 }
 
 void Space::setName(string n)
