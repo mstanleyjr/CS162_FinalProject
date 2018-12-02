@@ -5,6 +5,7 @@
 
 Space::Space()
 {
+	cout << "Space created" << endl;
 	setNorth(NULL);
 	setSouth(NULL);
 	setEast(NULL);
@@ -59,6 +60,7 @@ Space* Space::getWest()
 
 string Space::getName()
 {
+	cout << "hasn't dumped yet";
 	return name;
 }
 
