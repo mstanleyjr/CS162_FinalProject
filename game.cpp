@@ -49,6 +49,11 @@ Game::Game()
 	brewery[8][3] = NULL;
 	brewery[8][3] = new Door(8, 3);
 
+	//Set Player
+	delete brewery[7][3];
+	brewery[7][3] = NULL;
+	brewery[7][3] = new Player(7, 3);
+
 	for(int r = 0; r < 10; r++)
 	{
 		for(int c = 0; c < 7; c++)

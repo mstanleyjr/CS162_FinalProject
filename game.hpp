@@ -9,6 +9,7 @@
 #include "space.hpp"
 #include "wall.hpp"
 #include "door.hpp"
+#include "player.hpp"
 
 class Game
 {
