@@ -35,7 +35,7 @@ Game::Game()
 		delete brewery[0][c];
 		brewery[0][c] = NULL;
 		brewery[0][c] = new Wall(0, c);
-		brewery[0][c]->makeCeiling();
+		(brewery[0][c])->makeCeiling();
 	}
 }
 
