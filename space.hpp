@@ -33,6 +33,7 @@ class Space
 
 	public:
 		Space();
+		Space(int, int);
 		//Might need a destructor??
 		void setNorth(Space*);
 		void setSouth(Space*);

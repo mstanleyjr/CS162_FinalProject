@@ -10,7 +10,6 @@ class Floor : public Space
 {
 	public:
 		Floor();
-		Floor(int, int);
 		virtual void makeCeiling() override;
 };
 

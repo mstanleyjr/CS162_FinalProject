@@ -18,6 +18,22 @@ Space::Space()
 	setYCoord(-1);
 }
 
+Space::Space(int x, int y)
+{
+	setXCoord(x);
+	setYCoord(y);
+	setNorth(NULL);
+	setSouth(NULL);
+	setEast(NULL);
+	setWest(NULL);
+	setName("Space");
+	setActionable(false);
+	setFilled(false);
+	setContents("None");
+
+
+}
+
 void Space::setNorth(Space* s)
 {
 	this->north = s;
