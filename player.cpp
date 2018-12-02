@@ -8,6 +8,7 @@ Player::Player()
 	setName("Mike");
 	setFilled(true);
 	setActionable(true);
+	full = false;
 
 }
 
@@ -16,6 +17,7 @@ Player::Player(int x, int y) : Space(x, y)
 	setName("Mike");
 	setFilled(true);
 	setActionable(true);
+	full = false;
 }
 
 void Player::makeCeiling()
@@ -26,11 +28,14 @@ void Player::makeCeiling()
 void Player::addItem(string s)
 {
 	items.push_back(s);
+	full = true;
+
 }
 
 void Player::removeItem()
 {
 	items.pop_back();
+	full = false;
 }
 
 void Player::printItems()
@@ -43,7 +48,7 @@ void Player::printItems()
 
 string Player::useItem()
 {
-	if(items[0])
+	if(full)
 	{
 		string s = items[0];
 		return s;
@@ -56,7 +61,7 @@ string Player::useItem()
 
 bool Player::hasItem()
 {
-	if(items[0])
+	if(full)
 	{
 		return true;
 	}

@@ -12,6 +12,7 @@ class Player : public Space
 {
 	private:
 		vector<string> items;
+		bool full;
 
 	public:
 		Player();
