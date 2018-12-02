@@ -8,11 +8,13 @@
 #include "floor.hpp"
 #include "space.hpp"
 #include "wall.hpp"
+#include "door.hpp"
 
 class Game
 {
 private:
 		Space*** brewery;
+		int days;
 
 
 	public:

@@ -6,6 +6,7 @@
 Game::Game()
 
 {
+	days = 0;
 	brewery = new Space**[10];
 	for(int i = 0; i < 10; i++)
 	{
@@ -42,6 +43,11 @@ Game::Game()
 			brewery[r][c] = new Wall(r, c);
 		}
 	}
+
+	//Set Door
+	delete brewery[3][5];
+	brewery[3][5] = NULL;
+	brewery[3][5] = new Door(3, 5);
 
 	for(int r = 0; r < 10; r++)
 	{
