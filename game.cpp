@@ -120,7 +120,7 @@ void Game::printBrewery()
 void Game::move()
 {
 	cout << "Select your movement direction: " << endl;
-	cout << "(1 = Up)(2 = Down)(3 = Left) (4 = Right)" << endl
+	cout << "(1 = Up)(2 = Down)(3 = Left) (4 = Right)" << endl;
 	int direction =  checkValidity(1, 4);
 	if(direction == 1)
 	{
