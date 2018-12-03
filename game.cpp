@@ -124,11 +124,67 @@ void Game::move()
 	int direction =  checkValidity(1, 4);
 	if(direction == 1)
 	{
-		cout << "1" << endl;
 		Space* next = brewery[getPlayerX()][getPlayerY()]->getNorth();
-		cout << "2" << endl;
 		cout << next->getXCoord() << "  and " << next->getYCoord() << endl;
-		cout << "bool: " << next->isFilled() << endl;
+		if(!(next->isFilled()))
+		{
+			int newX = next->getXCoord();
+			int newY = next->getYCoord();
+			delete brewery[newX][newY];
+			brewery[newX][newY] = brewery[getPlayerX()][getPlayerY()];
+			brewery[getPlayerX()][getPlayerY()] = new Floor(getPlayerX(), getPlayerY());
+			setPlayerX(newX);
+			setPlayerY(newY);
+		}
+		else
+		{
+			cout << "haven't built yet" << endl;
+		}
+	}
+	if(direction == 2)
+	{
+		Space* next = brewery[getPlayerX()][getPlayerY()]->getSouth();
+		cout << next->getXCoord() << "  and " << next->getYCoord() << endl;
+		if(!(next->isFilled()))
+		{
+			int newX = next->getXCoord();
+			int newY = next->getYCoord();
+			delete brewery[newX][newY];
+			brewery[newX][newY] = brewery[getPlayerX()][getPlayerY()];
+			brewery[getPlayerX()][getPlayerY()] = new Floor(getPlayerX(), getPlayerY());
+			setPlayerX(newX);
+			setPlayerY(newY);
+		}
+		else
+		{
+			cout << "haven't built yet" << endl;
+		}
+	}
+
+	if(direction == 3)
+	{
+		Space* next = brewery[getPlayerX()][getPlayerY()]->getWest();
+		cout << next->getXCoord() << "  and " << next->getYCoord() << endl;
+		if(!(next->isFilled()))
+		{
+			int newX = next->getXCoord();
+			int newY = next->getYCoord();
+			delete brewery[newX][newY];
+			brewery[newX][newY] = brewery[getPlayerX()][getPlayerY()];
+			brewery[getPlayerX()][getPlayerY()] = new Floor(getPlayerX(), getPlayerY());
+			setPlayerX(newX);
+			setPlayerY(newY);
+		}
+		else
+		{
+			cout << "haven't built yet" << endl;
+		}
+	}
+
+	if(direction == 4)
+	{
+		Space* next = brewery[getPlayerX()][getPlayerY()]->getEast();
+		cout << next->getXCoord() << "  and " << next->getYCoord() << endl;
 		if(!(next->isFilled()))
 		{
 			int newX = next->getXCoord();
