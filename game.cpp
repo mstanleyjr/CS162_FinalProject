@@ -292,7 +292,7 @@ int Game::checkValidity(int lower, int upper)
 
 void Game::play()
 {
-	int moves = 4;
+	int moves = 10;
 	do{
 		printBrewery();
 		move();
