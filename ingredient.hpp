@@ -20,4 +20,4 @@ class Ingredient : public Space
 		string returnIngredient(int);
 };
 
-#endif 
+#endif
