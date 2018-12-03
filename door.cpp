@@ -8,7 +8,7 @@ Door::Door()
 	setName("Door ");
 	setFilled(true);
 	setActionable(true);
-	leave = fasle;
+	leave = false;
 }
 
 Door::Door(int x, int y) : Space (x, y)
