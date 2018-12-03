@@ -304,6 +304,6 @@ void Game::play()
 				setPointers(r, c);
 			}
 		}
-
+		cout << "Bool of door: " << brewery[8][3]->didLeave() << endl;
 	} while(brewery[8][3]->didLeave());
 }
