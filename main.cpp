@@ -9,6 +9,6 @@ int main()
 
 {
 	Game g1;
-	g1.printBrewery();
+	g1.play();
 	return 0;
 }
