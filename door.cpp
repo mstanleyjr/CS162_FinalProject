@@ -24,11 +24,6 @@ void Door::makeCeiling()
 
 }
 
-void Door::exitBrewhouse()
-{
-	leave = true;
-}
-
 void Door::action()
 {
 	cout << "Are you sure you would like to exit the brewhouse?" << endl;
@@ -36,9 +31,12 @@ void Door::action()
 	int answer = checkValidity(1, 2);
 	if (answer == 1)
 	{
-		exitBrewhouse();
+		leave = true;
 	}
-
+	else
+	{
+		leave = false;
+	}
 }
 
 bool Door::didLeave()
