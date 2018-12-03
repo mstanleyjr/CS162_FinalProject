@@ -132,8 +132,9 @@ void Game::move()
 			delete brewery[newX][newY];
 			brewery[newX][newY] = NULL;
 			brewery[newX][newY] = new Player(newX, newY);
+			cout << "Is it before the equals?" << endl;
 			brewery[newX][newY] = brewery[getPlayerX()][getPlayerY()];
-
+			cout << "After hte equals" << endl;
 			delete brewery[getPlayerX()][getPlayerY()];
 			brewery[getPlayerX()][getPlayerY()] = NULL;
 			brewery[getPlayerX()][getPlayerY()] = new Floor(getPlayerX(), getPlayerY());
