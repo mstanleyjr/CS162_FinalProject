@@ -124,7 +124,9 @@ void Game::move()
 	int direction =  checkValidity(1, 4);
 	if(direction == 1)
 	{
+		cout << "1" << endl;
 		Space* next = brewery[getPlayerX()][getPlayerY()]->getNorth();
+		cout << "2" << endl;
 		if(!(next->isFilled()))
 		{
 			int newX = next->getXCoord();
