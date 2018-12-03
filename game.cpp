@@ -143,7 +143,6 @@ void Game::move()
 	if(direction == 2)
 	{
 		Space* next = brewery[getPlayerX()][getPlayerY()]->getSouth();
-		cout << next->getXCoord() << "  and " << next->getYCoord() << endl;
 		if(!(next->isFilled()))
 		{
 			int newX = next->getXCoord();
@@ -163,7 +162,6 @@ void Game::move()
 	if(direction == 3)
 	{
 		Space* next = brewery[getPlayerX()][getPlayerY()]->getWest();
-		cout << next->getXCoord() << "  and " << next->getYCoord() << endl;
 		if(!(next->isFilled()))
 		{
 			int newX = next->getXCoord();
@@ -183,7 +181,6 @@ void Game::move()
 	if(direction == 4)
 	{
 		Space* next = brewery[getPlayerX()][getPlayerY()]->getEast();
-		cout << next->getXCoord() << "  and " << next->getYCoord() << endl;
 		if(!(next->isFilled()))
 		{
 			int newX = next->getXCoord();
