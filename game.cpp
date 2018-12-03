@@ -16,7 +16,7 @@ Game::Game()
 	{
 		for(int j = 0; j < 7; j++)
 		{
-			brewery[i][j] = new Floor();
+			brewery[i][j] = new Floor(i, j);
 		}
 	}
 
