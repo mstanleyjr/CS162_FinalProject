@@ -305,5 +305,5 @@ void Game::play()
 			}
 		}
 		cout << "Bool of door: " << brewery[8][3]->didLeave() << endl;
-	} while(brewery[8][3]->didLeave());
+	} while(!(brewery[8][3]->didLeave()));
 }
