@@ -29,11 +29,11 @@ void Ingredient::action();
 
 void printList()
 {
-	if(list.size() > 0)
+	if(this->list.size() > 0)
 	{
-		for(int i = 0; i < list.size(); i++)
+		for(int i = 0; i < this->list.size(); i++)
 		{
-			cout << i + 1 << ": " list[i] << endl;
+			cout << i + 1 << ": " << this->list[i] << endl;
 		}
 	}
 }
