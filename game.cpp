@@ -116,10 +116,7 @@ void Game::setPointers(int r, int c)
 
 void Game::printBrewery()
 {
-	for(int i = 0; i < 7; i++)
-	{
-		cout << "  " << i << "  ";
-	}
+	
 	cout << endl;
 	for(int i = 0; i < 10; i++)
 	{
