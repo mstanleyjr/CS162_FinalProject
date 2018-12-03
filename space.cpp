@@ -134,3 +134,8 @@ int Space::getYCoord()
 {
 	return this->yCoord;
 }
+
+bool Space::didLeave()
+{
+	return false;
+}
