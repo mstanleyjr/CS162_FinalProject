@@ -53,9 +53,16 @@ Game::Game()
 	delete brewery[6][1];
 	brewery[6][1] = NULL;
 	brewery[6][1] = new Ingredient(6, 1);
-	brewery[6][1]->setName("Grain ");
+	brewery[6][1]->setName("Grain");
 	//Gotta override this mofo
 	//brewery[6][1]setIngredient("Marris Otter");
+
+	//Set Hops
+	delete brewery[8][1];
+	brewery[8][1] = NULL;
+	brewery[8][1] = new Ingredient(8, 1);
+	brewery[8][1]->setName("Hops ");
+
 
 	//Set Player
 	delete brewery[7][3];
