@@ -139,3 +139,8 @@ bool Space::didLeave()
 {
 	return false;
 }
+
+void Space::action()
+{
+	
+}

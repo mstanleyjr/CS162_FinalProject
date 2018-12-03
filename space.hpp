@@ -57,6 +57,7 @@ class Space
 		int getYCoord();
 		virtual void makeCeiling() = 0;
 		virtual bool didLeave();
+		virtual void action();
 
 
 
