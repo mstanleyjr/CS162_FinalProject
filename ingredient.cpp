@@ -27,7 +27,7 @@ void Ingredient::action();
 	cout << "Still working that " << endl;
 }
 
-void printList()
+void Ingredient::printList()
 {
 	if(this->list.size() > 0)
 	{
