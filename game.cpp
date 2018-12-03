@@ -125,7 +125,6 @@ void Game::move()
 	if(direction == 1)
 	{
 		Space* next = brewery[getPlayerX()][getPlayerY()]->getNorth();
-		cout << next->getXCoord() << "  and " << next->getYCoord() << endl;
 		if(!(next->isFilled()))
 		{
 			int newX = next->getXCoord();
@@ -292,8 +291,7 @@ int Game::checkValidity(int lower, int upper)
 
 void Game::play()
 {
-	cout << "Bool of door: " << brewery[8][3]->didLeave() << endl;
-	cout << "reference true: " << true << endl;
+
 	do{
 		printBrewery();
 		move();
@@ -304,6 +302,6 @@ void Game::play()
 				setPointers(r, c);
 			}
 		}
-		cout << "Bool of door: " << brewery[8][3]->didLeave() << endl;
+
 	} while(!(brewery[8][3]->didLeave()));
 }
