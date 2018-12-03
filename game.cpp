@@ -246,5 +246,5 @@ void Game::play()
 			}
 		}
 
-	} while(!((brewery[8][3])->didLeave()));
+	} while(!(brewery[8][3]->didLeave()));
 }
