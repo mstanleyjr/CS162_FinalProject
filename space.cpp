@@ -142,5 +142,74 @@ bool Space::didLeave()
 
 void Space::action()
 {
-	
+
+}
+
+
+int Space::checkValidity(int lower, int upper)
+{
+	string getter;
+	bool isValid = false;
+	bool isNegative = false;
+
+	do
+	{
+		cout << "Please enter your selection: " << endl;
+		getline(cin, getter);
+		for(int i = 0; i < getter.length(); i++)
+		{
+			//If hyphen is in front of int, adjust bool flag
+			if(getter[0] == '-' && !isNegative)
+			{
+				isNegative = true;
+				i++;
+			}
+
+			//Check all other chars or digit
+			if(!(isdigit(getter[i])))
+			{
+				isValid = false;
+				break;
+			}
+			else
+			{
+				isValid = true;
+			}
+		}
+
+		//If it is a digit, break
+		if(isValid)
+		{
+			break;
+		}
+
+		cin.clear();
+		cout << "Input not valid" << endl;
+	} while (!isValid);
+
+	//Convert to int and determine if it is in range
+	if(isNegative)
+	{
+		getter = getter.substr(1, (getter.length() - 1));
+	}
+
+	int userInput = stoi(getter);
+
+	if(isNegative)
+	{
+		userInput *= -1;
+	}
+
+	if(userInput >= lower && userInput <= upper)
+	{
+		isValid = true;
+	}
+	else
+	{
+		cout << "Please enter a number between " << lower << " and " << upper << endl;
+		cin.clear();
+		userInput = checkValidity(lower, upper);
+	}
+
+	return userInput;
 }

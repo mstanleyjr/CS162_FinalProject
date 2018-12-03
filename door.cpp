@@ -31,7 +31,14 @@ void Door::exitBrewhouse()
 
 void Door::action()
 {
-	exitBrewhouse();
+	cout << "Are you sure you would like to exit the brewhouse?" << endl;
+	cout << "1 - Yes" << endl << "2 - No" << endl;
+	int answer = checkValidity(1, 2);
+	if (answer == 1)
+	{
+		exitBrewhouse();
+	}
+
 }
 
 bool Door::didLeave()

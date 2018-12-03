@@ -20,6 +20,7 @@ private:
 		int playerXCoord;
 		int playerYCoord;
 
+
 	public:
 		Game();
 		~Game();

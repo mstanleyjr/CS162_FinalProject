@@ -291,17 +291,20 @@ int Game::checkValidity(int lower, int upper)
 
 void Game::play()
 {
-
-	do{
-		printBrewery();
-		move();
-		for(int r = 0; r < 10; r++)
-		{
-			for(int c = 0; c < 7; c++)
+	for(days; days < 20; days++)
+	{
+		cout << "Day " << days + 1 << endl;
+		do{
+			printBrewery();
+			move();
+			for(int r = 0; r < 10; r++)
 			{
-				setPointers(r, c);
+				for(int c = 0; c < 7; c++)
+				{
+					setPointers(r, c);
+				}
 			}
-		}
 
-	} while(!(brewery[8][3]->didLeave()));
+		} while(!(brewery[8][3]->didLeave()));
+	}
 }

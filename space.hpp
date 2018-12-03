@@ -58,6 +58,7 @@ class Space
 		virtual void makeCeiling() = 0;
 		virtual bool didLeave();
 		virtual void action();
+		int checkValidity(int, int);
 
 
 
