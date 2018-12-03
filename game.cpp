@@ -53,6 +53,8 @@ Game::Game()
 	delete brewery[7][3];
 	brewery[7][3] = NULL;
 	brewery[7][3] = new Player(7, 3);
+	setPlayerX(7);
+	setPlayerY(3);
 
 	for(int r = 0; r < 10; r++)
 	{
@@ -113,4 +115,136 @@ void Game::printBrewery()
 		cout << endl;
 	}
 	cout << endl;
+}
+
+void Game::move()
+{
+	int direction =  checkValidity(1, 4);
+	if(d == 1)
+	{
+		Space* next = brewery[getPlayerX()][getPlayerY()]->getNorth();
+		if(!(next->isFilled())
+		{
+			int newX = next->getXCoord();
+			int newY = next->getYCoord();
+			delete brewery[newX][newY];
+			brewery[newX][newY] = NULL;
+			brewery[newX][newY] = new Player(newX, newY);
+			brewery[newX][newY] = brewery[getPlayerX()][getPlayerY()];
+
+			delete brewery[getPlayerX()][getPlayerY()];
+			brewery[getPlayerX()][getPlayerY()] = NULL;
+			brewery[getPlayerX()][getPlayerY()] = new Floor(getPlayerX(), getPlayerY());
+			setPlayerX(newX);
+			setPlayerY(newY);
+		}
+		else
+		{
+			cout << "haven't built yet" << endl;
+		}
+	}
+}
+
+void Game::setPlayerX(int x)
+{
+	playerXCoord = x;
+}
+
+void Game::setPlayerY(int y)
+{
+	playerYCoord = y;
+}
+
+int Game::getPlayerX()
+{
+	return this->playerXCoord;
+}
+
+int Game::getPlayerY()
+{
+	return this->playerYCoord;
+}
+
+int Game::checkValidity(int lower, int upper)
+{
+	string getter;
+	bool isValid = false;
+	bool isNegative = false;
+
+	do
+	{
+		cout << "Please enter your selection: " << endl;
+		getline(cin, getter);
+		for(int i = 0; i < getter.length(); i++)
+		{
+			//If hyphen is in front of int, adjust bool flag
+			if(getter[0] == '-' && !isNegative)
+			{
+				isNegative = true;
+				i++;
+			}
+
+			//Check all other chars or digit
+			if(!(isdigit(getter[i])))
+			{
+				isValid = false;
+				break;
+			}
+			else
+			{
+				isValid = true;
+			}
+		}
+
+		//If it is a digit, break
+		if(isValid)
+		{
+			break;
+		}
+
+		cin.clear();
+		cout << "Input not valid" << endl;
+	} while (!isValid);
+
+	//Convert to int and determine if it is in range
+	if(isNegative)
+	{
+		getter = getter.substr(1, (getter.length() - 1));
+	}
+
+	int userInput = stoi(getter);
+
+	if(isNegative)
+	{
+		userInput *= -1;
+	}
+
+	if(userInput >= lower && userInput <= upper)
+	{
+		isValid = true;
+	}
+	else
+	{
+		cout << "Please enter a number between " << lower << " and " << upper << endl;
+		cin.clear();
+		userInput = checkValidity(lower, upper);
+	}
+
+	return userInput;
+}
+
+void Game::play()
+{
+	do{
+		printBrewery();
+		move();
+		for(int r = 0; r < 10; r++)
+		{
+			for(int c = 0; c < 7; c++)
+			{
+				setPointers(r, c);
+			}
+		}
+
+	} while(!(brewery[8][3]->didLeave()));
 }

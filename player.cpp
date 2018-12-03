@@ -14,7 +14,7 @@ Player::Player()
 
 Player::Player(int x, int y) : Space(x, y)
 {
-	setName("Mike");
+	setName("Mike ");
 	setFilled(true);
 	setActionable(true);
 	full = false;

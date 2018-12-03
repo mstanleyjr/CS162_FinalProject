@@ -16,13 +16,22 @@ class Game
 private:
 		Space*** brewery;
 		int days;
-
+		int checkValidity(int, int);
+		int playerXCoord;
+		int playerYCoord;
 
 	public:
 		Game();
 		~Game();
 		void printBrewery();
 		void setPointers(int, int);
+		void move();
+		void setPlayerX(int);
+		void setPlayerY(int);
+		int getPlayerX();
+		int getPlayerY();
+		void play();
+
 
 };
 
