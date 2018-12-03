@@ -22,7 +22,7 @@ void Ingredient::makeCeiling()
 
 }
 
-void Ingredient::action();
+void Ingredient::action()
 {
 	cout << "Still working that " << endl;
 }
