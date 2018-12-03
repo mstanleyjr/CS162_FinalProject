@@ -136,9 +136,9 @@ void Game::move()
 			setPlayerX(newX);
 			setPlayerY(newY);
 		}
-		else
+		else if (next->isFilled() && next->isActionable())
 		{
-			cout << "haven't built yet" << endl;
+			next->action();
 		}
 	}
 	if(direction == 2)
@@ -155,9 +155,9 @@ void Game::move()
 			setPlayerX(newX);
 			setPlayerY(newY);
 		}
-		else
+		else if (next->isFilled() && next->isActionable())
 		{
-			cout << "haven't built yet" << endl;
+			next->action();
 		}
 	}
 
@@ -175,9 +175,9 @@ void Game::move()
 			setPlayerX(newX);
 			setPlayerY(newY);
 		}
-		else
+		else if (next->isFilled() && next->isActionable())
 		{
-			cout << "haven't built yet" << endl;
+			next->action();
 		}
 	}
 
@@ -195,9 +195,9 @@ void Game::move()
 			setPlayerX(newX);
 			setPlayerY(newY);
 		}
-		else
+		else if (next->isFilled() && next->isActionable())
 		{
-			cout << "haven't built yet" << endl;
+			next->action();
 		}
 	}
 }
@@ -292,7 +292,7 @@ int Game::checkValidity(int lower, int upper)
 
 void Game::play()
 {
-	int moves = 10;
+
 	do{
 		printBrewery();
 		move();
@@ -303,7 +303,6 @@ void Game::play()
 				setPointers(r, c);
 			}
 		}
-		moves--;
 
-	} while(moves >= 0);
+	} while(brewery[8][3]->didLeave();
 }
