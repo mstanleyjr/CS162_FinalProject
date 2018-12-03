@@ -320,9 +320,9 @@ void Game::play()
 		} while(!(brewery[8][3]->didLeave()));
 
 		cout << "Would you like to keep playing?" << endl;
-		cout << "1 - Yes	2 - No" << endl;
+		cout << "1 - Yes	    2 - No" << endl;
 		int decision = checkValidity(1, 2);
-		if(decision == 1)
+		if(decision == 2)
 		{
 			days = 20;
 		}
