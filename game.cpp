@@ -242,6 +242,7 @@ int Game::checkValidity(int lower, int upper)
 
 void Game::play()
 {
+	int moves = 4;
 	do{
 		printBrewery();
 		move();
@@ -252,6 +253,7 @@ void Game::play()
 				setPointers(r, c);
 			}
 		}
+		moves--;
 
-	} while(!(brewery[8][3]->didLeave()));
+	} while(moves >= 0);
 }
