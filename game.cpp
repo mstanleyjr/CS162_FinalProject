@@ -127,6 +127,8 @@ void Game::move()
 		cout << "1" << endl;
 		Space* next = brewery[getPlayerX()][getPlayerY()]->getNorth();
 		cout << "2" << endl;
+		cout << next->getXCoord() << "  and " << next->getYCoord() << endl;
+		cout << "bool: " << next->isFilled() << endl;
 		if(!(next->isFilled()))
 		{
 			int newX = next->getXCoord();
