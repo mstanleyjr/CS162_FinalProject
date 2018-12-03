@@ -120,10 +120,10 @@ void Game::printBrewery()
 void Game::move()
 {
 	int direction =  checkValidity(1, 4);
-	if(d == 1)
+	if(direction == 1)
 	{
 		Space* next = brewery[getPlayerX()][getPlayerY()]->getNorth();
-		if(!(next->isFilled())
+		if(!(next->isFilled()))
 		{
 			int newX = next->getXCoord();
 			int newY = next->getYCoord();
@@ -246,5 +246,5 @@ void Game::play()
 			}
 		}
 
-	} while(!(brewery[8][3]->didLeave()));
+	} while(!((brewery[8][3])->didLeave()));
 }
