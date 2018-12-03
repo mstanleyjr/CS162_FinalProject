@@ -1,6 +1,6 @@
 
-FinalProject_Stanley_Michael: floor.o player.o door.o space.o wall.o game.o main.o
-	g++ -g -std=c++0x floor.o player.o door.o space.o game.o wall.o main.o -o FinalProject_Stanley_Michael
+FinalProject_Stanley_Michael: floor.o ingredient.o player.o door.o space.o wall.o game.o main.o
+	g++ -g -std=c++0x floor.o player.o ingredient.o door.o space.o game.o wall.o main.o -o FinalProject_Stanley_Michael
 
 main.o: main.cpp
 	g++ -g -std=c++0x -c main.cpp
@@ -22,6 +22,9 @@ door.o: door.hpp door.cpp
 
 player.o: player.hpp player.cpp
 	g++ -g -std=c++0x -c player.cpp
+
+ingredient.o: ingredient.hpp ingredient.cpp
+	g++ -g -std=c++0x -c ingredient.cpp
 
 clean:
 	rm *.o FinalProject_Stanley_Michael

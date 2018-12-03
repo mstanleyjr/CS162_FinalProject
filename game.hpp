@@ -10,6 +10,7 @@
 #include "wall.hpp"
 #include "door.hpp"
 #include "player.hpp"
+#include "ingredient.hpp"
 
 class Game
 {

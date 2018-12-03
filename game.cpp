@@ -49,6 +49,13 @@ Game::Game()
 	brewery[8][3] = NULL;
 	brewery[8][3] = new Door(8, 3);
 
+	//Set Grain
+	delete brewery[6][1];
+	brewery[6][1] = NULL;
+	brewery[6][1] = new Ingredient(6, 1);
+	brewery[6][1]->setName("Grain ");
+	brewery[6][1]->addIngredient("Marris Otter");
+
 	//Set Player
 	delete brewery[7][3];
 	brewery[7][3] = NULL;
