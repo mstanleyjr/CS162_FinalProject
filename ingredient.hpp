@@ -9,7 +9,7 @@ class Ingredient : public Space
 {
 	private:
 		vector<string> list;
-		void addIngredient(string);
+
 
 	public:
 		Ingredient();
@@ -18,6 +18,7 @@ class Ingredient : public Space
 		virtual void action() override;
 		void printList();
 		string returnIngredient(int);
+		void addIngredient(string);
 };
 
 #endif
