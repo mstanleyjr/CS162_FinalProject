@@ -72,7 +72,7 @@ Game::Game()
 	brewery[7][3] = new Player(7, 3);
 	setPlayerX(7);
 	setPlayerY(3);
-	brewer = brewery[7][3];
+
 
 	for(int r = 0; r < 10; r++)
 	{
@@ -81,7 +81,8 @@ Game::Game()
 			setPointers(r, c);
 		}
 	}
-
+	brewer.addItem("Hops man");
+	brewer.printItems();
 
 }
 
@@ -117,7 +118,7 @@ void Game::setPointers(int r, int c)
 	{
 		brewery[r][c]->setEast(brewery[r][c + 1]);
 	}
-	brewer = brewery[getPlayerX()][getPlayerY()];
+
 }
 
 void Game::printBrewery()
