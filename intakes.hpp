@@ -15,4 +15,6 @@ class Intakes : public Space
 		virtual void makeCeiling() override;
 		virtual void action() override;
 
-}
+};
+
+#endif
