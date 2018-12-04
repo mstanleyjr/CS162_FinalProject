@@ -4,6 +4,20 @@
 #define INGREDIENT_HPP
 
 #include "space.hpp"
+#include <memory>
+using std::shared_ptr;
+using std::make_shared;
+
+#include <string>
+using std::string;
+
+#include <iostream>
+using std::cin;
+using std::cout;
+using std::endl;
+
+#include <vector>
+using std::vector;
 
 class Ingredient : public Space
 {
@@ -14,11 +28,11 @@ class Ingredient : public Space
 	public:
 		Ingredient();
 		Ingredient(int, int);
-		virtual void makeCeiling() override;
-		virtual void action() override;
+		virtual void makeCeiling();
+		virtual void action();
 		void printList();
 		string returnIngredient(int);
-		void addIngredient(string) override;
+		void addIngredient(string);
 };
 
 #endif
