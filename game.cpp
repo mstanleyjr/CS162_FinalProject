@@ -54,8 +54,8 @@ Game::Game()
 	brewery[6][1] = NULL;
 	brewery[6][1] = new Ingredient(6, 1);
 	brewery[6][1]->setName("Grain");
-	//Gotta override this mofo
-	//brewery[6][1]setIngredient("Marris Otter");
+	//Gotta override this mofo??
+	brewery[6][1]->addIngredient("Marris Otter");
 
 	//Set Hops
 	delete brewery[8][1];
@@ -116,7 +116,7 @@ void Game::setPointers(int r, int c)
 
 void Game::printBrewery()
 {
-	
+
 	cout << endl;
 	for(int i = 0; i < 10; i++)
 	{
