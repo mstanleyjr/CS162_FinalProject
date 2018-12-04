@@ -3,6 +3,9 @@
 #ifndef SPACE_HPP
 #define SPACE_HPP
 
+#include "ingredient.hpp"
+
+
 #include <memory>
 using std::shared_ptr;
 using std::make_shared;
