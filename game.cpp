@@ -54,17 +54,20 @@ Game::Game()
 	brewery[6][1] = NULL;
 	brewery[6][1] = new Ingredient(6, 1);
 	brewery[6][1]->setName("Grain");
-	brewery[6][1]->addIngredient("Marris Otter");
-	brewery[6][1]->addIngredient("Pilsen");
-	brewery[6][1]->addIngredient("Roasted Barley");
-	brewery[6][1]->addIngredient("Crystal 60");
+	brewery[6][1]->addContents("Marris Otter");
+	brewery[6][1]->addContents("Pilsen");
+	brewery[6][1]->addContents("Roasted Barley");
+	brewery[6][1]->addContents("Crystal 60");
 
 	//Set Hops
 	delete brewery[8][1];
 	brewery[8][1] = NULL;
 	brewery[8][1] = new Ingredient(8, 1);
 	brewery[8][1]->setName("Hops ");
-
+	brewery[8][1]->addContents("Simcoe");
+	brewery[8][1]->addContents("Citra");
+	brewery[8][1]->addContents("Mosaic");
+	brewery[8][1]->addContents("Columbus");
 
 	//Set Player
 	delete brewery[7][3];
@@ -81,8 +84,7 @@ Game::Game()
 			setPointers(r, c);
 		}
 	}
-	brewer->addItem("Hops man");
-	brewer->printItems();
+
 
 }
 
@@ -156,6 +158,18 @@ void Game::move()
 		}
 		else if (next->isFilled() && next->isActionable())
 		{
+			if(next->getName() == "Grain" || next->getName() == "Hops ")
+			{
+				string s = next->getContents(brewer.hasItem());
+				if(s != "" || s != "1" || s != "2")
+				{
+					brewer.addItem(s);
+				}
+				else if (s == "1")
+				{
+					brewer.removeItem();
+				}
+			}
 			next->action();
 		}
 	}
@@ -174,6 +188,18 @@ void Game::move()
 		}
 		else if (next->isFilled() && next->isActionable())
 		{
+			if(next->getName() == "Grain" || next->getName() == "Hops ")
+			{
+				string s = next->getContents(brewer.hasItem());
+				if(s != "" || s != "1" || s != "2")
+				{
+					brewer.addItem(s);
+				}
+				else if (s == "1")
+				{
+					brewer.removeItem();
+				}
+			}
 			next->action();
 		}
 	}
@@ -193,6 +219,18 @@ void Game::move()
 		}
 		else if (next->isFilled() && next->isActionable())
 		{
+			if(next->getName() == "Grain" || next->getName() == "Hops ")
+			{
+				string s = next->getContents(brewer.hasItem());
+				if(s != "" || s != "1" || s != "2")
+				{
+					brewer.addItem(s);
+				}
+				else if (s == "1")
+				{
+					brewer.removeItem();
+				}
+			}
 			next->action();
 		}
 	}
@@ -212,6 +250,18 @@ void Game::move()
 		}
 		else if (next->isFilled() && next->isActionable())
 		{
+			if(next->getName() == "Grain" || next->getName() == "Hops ")
+			{
+				string s = next->getContents(brewer.hasItem());
+				if(s != "" || s != "1" || s != "2")
+				{
+					brewer.addItem(s);
+				}
+				else if (s == "1")
+				{
+					brewer.removeItem();
+				}
+			}
 			next->action();
 		}
 	}

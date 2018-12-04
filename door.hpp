@@ -16,7 +16,7 @@ class Door : public Space
 		Door(int, int);
 		virtual void makeCeiling() override;
 		virtual bool didLeave() override;
-		virtual void action(Player* ) override;
+		virtual void action() override;
 };
 
 #endif

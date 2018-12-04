@@ -22,8 +22,6 @@ using std::vector;
 #include <queue>
 using std::queue;
 
-#include "player.hpp"
-
 class Space
 {
 	private:
@@ -34,7 +32,7 @@ class Space
 		string name;
 		bool	actionable;
 		bool	filled;
-		string contains;
+		vector<string> list;
 		int xCoord;
 		int yCoord;
 
@@ -57,17 +55,18 @@ class Space
 		void setActionable(bool);
 		bool isFilled();
 		void setFilled(bool);
-		void setContents(string);
-		string getContents();
+		void addContents(string);
+		string getContents(bool);
+		void printContents();
 		void setXCoord(int);
 		int getXCoord();
 		void setYCoord(int);
 		int getYCoord();
 		virtual void makeCeiling() = 0;
 		virtual bool didLeave();
-		virtual void action(Player*);
+		virtual void action();
 		int checkValidity(int, int);
-		virtual void addIngredient(string);
+
 
 
 

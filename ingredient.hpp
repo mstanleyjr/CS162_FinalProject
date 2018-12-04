@@ -8,17 +8,16 @@
 class Ingredient : public Space
 {
 	private:
-		vector<string> list;
+
 
 
 	public:
 		Ingredient();
 		Ingredient(int, int);
 		virtual void makeCeiling() override;
-		virtual void action(Player* ) override;
+		virtual void action() override;
 		void printList();
-		string returnIngredient(int);
-		void addIngredient(string) override;
+
 };
 
 #endif

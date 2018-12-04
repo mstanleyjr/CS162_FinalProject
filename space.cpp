@@ -105,13 +105,52 @@ void Space::setFilled(bool f)
 	this->filled = f;
 }
 
-void Space::setContents(string c)
+void Space::addContents(string c)
 {
-	this->contains = c;
+	list.push_back(s);
 }
 
-string Space::getContents()
+void Space::printContents()
 {
+	if(this->list.size() > 0)
+	{
+		for(int i = 0; i < this->list.size(); i++)
+		{
+			cout << i + 1 << ": " << this->list[i] << endl;
+		}
+	}
+}
+
+string Space::getContents(bool atCapacity)
+{
+	if(this->list.size() > 0 && !atCapacity)
+	{
+		cout << "Please select from the following: " << endl;
+		this->printContents();
+		int decision = checkValidity(1, 4);
+		return list[decision - 1];
+	}
+	else if (!(this->list.size() > 0))
+	{
+		cout << "There are not items here" << endl;
+		return "";
+	}
+	else if (atCapacity)
+	{
+		cout << "You are currently holding your capacity" << endl;
+		cout << "Would you like to set it down?" << endl;
+		cout << "1 = Yes     2 = No" << endl;
+		int decision = checkValidity(1, 2);
+		if(decision == 1)
+		{
+			return "1";
+		}
+		else
+		{
+			return "2";
+		}
+	}
+
 	return this->contains;
 }
 
@@ -140,7 +179,7 @@ bool Space::didLeave()
 	return false;
 }
 
-void Space::action(Player* b)
+void Space::action()
 {
 
 }
