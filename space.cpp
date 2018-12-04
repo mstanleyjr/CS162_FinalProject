@@ -141,11 +141,11 @@ string Space::getContents(bool atCapacity)
 		int decision = checkValidity(1, 2);
 		if(decision == 1)
 		{
-			return "1";
+			return "yes";
 		}
 		else
 		{
-			return "2";
+			return "no";
 		}
 	}
 

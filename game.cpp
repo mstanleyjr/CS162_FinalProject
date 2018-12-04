@@ -253,11 +253,11 @@ void Game::move()
 			if(next->getName() == "Grain" || next->getName() == "Hops ")
 			{
 				string s = next->getContents(brewer.hasItem());
-				if(s != "" || s != "1" || s != "2")
+				if(s != "" || s != "yes" || s != "no")
 				{
 					brewer.addItem(s);
 				}
-				else if (s == "1")
+				else if (s == "yes")
 				{
 					cout << "Maybe it didn't work" << endl;
 					brewer.removeItem();
