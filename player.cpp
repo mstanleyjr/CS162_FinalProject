@@ -9,7 +9,8 @@ Player::Player()
 	setFilled(true);
 	setActionable(true);
 	full = false;
-	items = vector<string> (5);
+	vector<string> temp(10);
+	items = temp;
 }
 
 Player::Player(int x, int y) : Space(x, y)
@@ -18,7 +19,8 @@ Player::Player(int x, int y) : Space(x, y)
 	setFilled(true);
 	setActionable(true);
 	full = false;
-	items = vector<string> (5);
+	vector<string> temp(10);
+	items = temp;
 }
 
 void Player::makeCeiling()
