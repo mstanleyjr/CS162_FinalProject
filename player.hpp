@@ -10,7 +10,8 @@
 class Player : public Space
 {
 	private:
-
+		queue<string> items ();
+		bool full;
 
 	public:
 
@@ -22,8 +23,7 @@ class Player : public Space
 		void printItems();
 		string useItem();
 		bool hasItem();
-		queue<string> items;
-		bool full;
+
 
 
 };
