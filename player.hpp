@@ -10,7 +10,7 @@
 class Player : public Space
 {
 	private:
-		vector<string> items;
+		vector<string> items(1);
 		bool full;
 
 	public:
