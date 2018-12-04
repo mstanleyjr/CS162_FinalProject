@@ -18,9 +18,7 @@ Player::Player(int x, int y) : Space(x, y)
 	setFilled(true);
 	setActionable(true);
 	full = false;
-	cout << "let's queue: " << endl;
-	addItem("Hops bro");
-	printItems();
+	
 }
 
 void Player::makeCeiling()
@@ -46,7 +44,7 @@ void Player::removeItem()
 
 void Player::printItems()
 {
-	while(!items.empty())
+	if(!items.empty())
 	{
 		cout << items.front() << endl;
 	}
