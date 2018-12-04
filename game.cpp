@@ -259,6 +259,7 @@ void Game::move()
 				}
 				else if (s == "1")
 				{
+					cout << "Maybe it didn't work" << endl;
 					brewer.removeItem();
 				}
 			}
