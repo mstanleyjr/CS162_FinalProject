@@ -55,7 +55,7 @@ Game::Game()
 	brewery[6][1] = new Ingredient(6, 1);
 	brewery[6][1]->setName("Grain");
 	//Gotta override this mofo??
-	brewery[6][1]->addIngredient("Marris Otter");
+//	brewery[6][1]->addIngredient("Marris Otter");
 
 	//Set Hops
 	delete brewery[8][1];
