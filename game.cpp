@@ -80,7 +80,7 @@ Game::Game()
 	}
 
 	cout << "List of grain: " << endl;
-	brewery[6][1]->printList();
+	//brewery[6][1]->printList();
 }
 
 Game::~Game()
