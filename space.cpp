@@ -13,7 +13,6 @@ Space::Space()
 	setName("Space");
 	setActionable(false);
 	setFilled(false);
-	setContents("None");
 	setXCoord(-1);
 	setYCoord(-1);
 }
@@ -29,7 +28,6 @@ Space::Space(int x, int y)
 	setName("Space");
 	setActionable(false);
 	setFilled(false);
-	setContents("None");
 
 
 }
@@ -107,7 +105,7 @@ void Space::setFilled(bool f)
 
 void Space::addContents(string c)
 {
-	list.push_back(s);
+	list.push_back(c);
 }
 
 void Space::printContents()
@@ -151,7 +149,6 @@ string Space::getContents(bool atCapacity)
 		}
 	}
 
-	return this->contains;
 }
 
 void Space::setXCoord(int x)
@@ -184,10 +181,6 @@ void Space::action()
 
 }
 
-void Space::addIngredient(string s)
-{
-
-}
 
 int Space::checkValidity(int lower, int upper)
 {
