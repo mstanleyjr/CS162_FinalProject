@@ -37,7 +37,7 @@ void Player::removeItem()
 {
 	if(!items.empty())
 	{
-		cout << "removing item" << endl;
+		
 		items.pop();
 		full = false;
 	}

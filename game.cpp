@@ -69,6 +69,18 @@ Game::Game()
 	brewery[8][1]->addContents("Mosaic");
 	brewery[8][1]->addContents("Columbus");
 
+	//Set Mill
+	delete brewery[3][1];
+	brewery[3][1] = NULL;
+	brewery[3][1] = new Intakes(3, 1);
+	brewery[3][1]->setName("Mill ");
+
+	//Set Brewkettles
+	delete brewery[1][3];
+	brewery[1][3] = NULL;
+	brewery[1][3] = new Intakes(1, 3);
+	brewery[1][3]->setName("BrewK");
+
 	//Set Player
 	delete brewery[7][3];
 	brewery[7][3] = NULL;
@@ -176,7 +188,43 @@ void Game::move()
 					}
 				}
 			}
-			next->action();
+			else if(next->getName() == "Mill " || next->getName() == "BrewK")
+			{
+				if(brewer.hasItem())
+				{
+					string s = brewer.items.front();
+					if(next->getName() == "Mill ")
+					{
+						if(s != "Marris Otter" || s != "Pilsen" || s != "Roasted Barley" || s != "Crystal 60")
+						{
+							cout << "This item is not compatible" << endl;
+						}
+						else
+						{
+							brewer.removeItem();
+							next->action();
+						}
+
+					}
+					else if(next->getName() == "BrewK")
+					{
+						if(s != "Simcoe" || s != "Citra" || s != "Mosaic" || s != "Columbus")
+						{
+							cout << "This item is not compatible" << endl;
+						}
+						else
+						{
+							brewer.removeItem();
+							next->action();
+						}
+					}
+				}
+			}
+			else
+			{
+				next->action();
+			}
+
 		}
 	}
 	if(direction == 2)
@@ -212,7 +260,42 @@ void Game::move()
 					}
 				}
 			}
-			next->action();
+			else if(next->getName() == "Mill " || next->getName() == "BrewK")
+			{
+				if(brewer.hasItem())
+				{
+					string s = brewer.items.front();
+					if(next->getName() == "Mill ")
+					{
+						if(s != "Marris Otter" || s != "Pilsen" || s != "Roasted Barley" || s != "Crystal 60")
+						{
+							cout << "This item is not compatible" << endl;
+						}
+						else
+						{
+							brewer.removeItem();
+							next->action();
+						}
+
+					}
+					else if(next->getName() == "BrewK")
+					{
+						if(s != "Simcoe" || s != "Citra" || s != "Mosaic" || s != "Columbus")
+						{
+							cout << "This item is not compatible" << endl;
+						}
+						else
+						{
+							brewer.removeItem();
+							next->action();
+						}
+					}
+				}
+			}
+			else
+			{
+				next->action();
+			}
 		}
 	}
 
@@ -250,7 +333,42 @@ void Game::move()
 				}
 
 			}
-			next->action();
+			else if(next->getName() == "Mill " || next->getName() == "BrewK")
+			{
+				if(brewer.hasItem())
+				{
+					string s = brewer.items.front();
+					if(next->getName() == "Mill ")
+					{
+						if(s != "Marris Otter" || s != "Pilsen" || s != "Roasted Barley" || s != "Crystal 60")
+						{
+							cout << "This item is not compatible" << endl;
+						}
+						else
+						{
+							brewer.removeItem();
+							next->action();
+						}
+
+					}
+					else if(next->getName() == "BrewK")
+					{
+						if(s != "Simcoe" || s != "Citra" || s != "Mosaic" || s != "Columbus")
+						{
+							cout << "This item is not compatible" << endl;
+						}
+						else
+						{
+							brewer.removeItem();
+							next->action();
+						}
+					}
+				}
+			}
+			else
+			{
+				next->action();
+			}
 		}
 	}
 
@@ -290,8 +408,42 @@ void Game::move()
 				}
 
 			}
+			else if(next->getName() == "Mill " || next->getName() == "BrewK")
+			{
+				if(brewer.hasItem())
+				{
+					string s = brewer.items.front();
+					if(next->getName() == "Mill ")
+					{
+						if(s != "Marris Otter" || s != "Pilsen" || s != "Roasted Barley" || s != "Crystal 60")
+						{
+							cout << "This item is not compatible" << endl;
+						}
+						else
+						{
+							brewer.removeItem();
+							next->action();
+						}
 
-			next->action();
+					}
+					else if(next->getName() == "BrewK")
+					{
+						if(s != "Simcoe" || s != "Citra" || s != "Mosaic" || s != "Columbus")
+						{
+							cout << "This item is not compatible" << endl;
+						}
+						else
+						{
+							brewer.removeItem();
+							next->action();
+						}
+					}
+				}
+			}
+			else
+			{
+				next->action();
+			}
 		}
 	}
 
@@ -404,7 +556,7 @@ void Game::play()
 			}
 
 		} while(!(brewery[8][3]->didLeave()));
-
+		brewer.removeItem();
 		cout << "Would you like to keep playing?" << endl;
 		cout << "1 - Yes	    2 - No" << endl;
 		int decision = checkValidity(1, 2);
