@@ -119,9 +119,9 @@ void Space::printContents()
 	}
 }
 
-string Space::getContents(bool atCapacity)
+string Space::getContents()
 {
-	if(this->list.size() > 0 && !atCapacity)
+	if(this->list.size() > 0)
 	{
 		cout << "Please select from the following: " << endl;
 		this->printContents();
@@ -132,21 +132,6 @@ string Space::getContents(bool atCapacity)
 	{
 		cout << "There are not items here" << endl;
 		return "";
-	}
-	else if (atCapacity)
-	{
-		cout << "You are currently holding your capacity" << endl;
-		cout << "Would you like to set it down?" << endl;
-		cout << "1 = Yes     2 = No" << endl;
-		int decision = checkValidity(1, 2);
-		if(decision == 1)
-		{
-			return "yes";
-		}
-		else
-		{
-			return "no";
-		}
 	}
 
 }

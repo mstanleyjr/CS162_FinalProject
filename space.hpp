@@ -56,7 +56,7 @@ class Space
 		bool isFilled();
 		void setFilled(bool);
 		void addContents(string);
-		string getContents(bool);
+		string getContents();
 		void printContents();
 		void setXCoord(int);
 		int getXCoord();
