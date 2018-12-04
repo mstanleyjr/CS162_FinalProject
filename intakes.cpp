@@ -7,7 +7,6 @@ Intakes::Intakes()
 	setName("Intake");
 	setFilled(true);
 	setActionable(true);
-	leave = false;
 }
 
 Intakes::Intakes(int x, int y) : Space (x, y)
@@ -15,7 +14,6 @@ Intakes::Intakes(int x, int y) : Space (x, y)
 	setName("Intake");
 	setFilled(true);
 	setActionable(true);
-	leave = false;
 }
 
 void Intakes::makeCeiling()
