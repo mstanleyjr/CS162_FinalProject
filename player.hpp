@@ -10,10 +10,10 @@
 class Player : public Space
 {
 	private:
-		queue<string> items;
-		bool full;
+
 
 	public:
+
 		Player();
 		Player(int, int);
 		virtual void makeCeiling() override;
@@ -22,6 +22,8 @@ class Player : public Space
 		void printItems();
 		string useItem();
 		bool hasItem();
+		queue<string> items;
+		bool full;
 
 
 };

@@ -81,8 +81,8 @@ Game::Game()
 			setPointers(r, c);
 		}
 	}
-	&brewer->addItem("Hops man");
-	&brewer->printItems();
+	brewer->addItem("Hops man");
+	brewer->printItems();
 
 }
 
