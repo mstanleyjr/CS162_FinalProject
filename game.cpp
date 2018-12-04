@@ -75,11 +75,12 @@ Game::Game()
 	brewery[3][1] = new Intakes(3, 1);
 	brewery[3][1]->setName("Mill ");
 
-	//Set Brewkettles
+	//Set Brewkettle
 	delete brewery[1][3];
 	brewery[1][3] = NULL;
 	brewery[1][3] = new Intakes(1, 3);
 	brewery[1][3]->setName("BrewK");
+	brewery[1][3]->setActionable(false);
 
 	//Set Player
 	delete brewery[7][3];
@@ -87,6 +88,31 @@ Game::Game()
 	brewery[7][3] = new Player(7, 3);
 	setPlayerX(7);
 	setPlayerY(3);
+
+	//Set MT
+	delete brewery[1][2];
+	brewery[1][2] = NULL;
+	brewery[1][2] = new Tank(1, 2);
+	brewery[1][2]->setName("MashT");
+
+
+	//Set FV1 - FV4
+	for(int i = 1; i < 5; i++)
+	{
+		delete brewery[i][5];
+		brewery[i][5] = NULL;
+		brewery[i][5] = new Tank(i, 5);
+		string name = " FV" + to_string(i) + " ";
+		brewery[i][5]->setName(name)
+
+	}
+
+	//Set KegT
+	delete brewery[5][5];
+	brewery[5][5] = NULL;
+	brewery[5][5] = new Tank(5, 5);
+	brewery[5][5]->setName("KegT ");
+
 
 
 	for(int r = 0; r < 10; r++)
@@ -200,6 +226,9 @@ void Game::move()
 						{
 							brewer.removeItem();
 							next->action();
+							//Allow BK to be actioned
+							brewery[1][3]->setActionable(true);
+
 
 						}
 						else
@@ -275,6 +304,8 @@ void Game::move()
 						{
 							brewer.removeItem();
 							next->action();
+							//Allow BK to be actioned
+							brewery[1][3]->setActionable(true);
 
 						}
 						else
@@ -351,6 +382,8 @@ void Game::move()
 						{
 							brewer.removeItem();
 							next->action();
+							//Allow BK to be actioned
+							brewery[1][3]->setActionable(true);
 
 						}
 						else
@@ -429,6 +462,8 @@ void Game::move()
 						{
 							brewer.removeItem();
 							next->action();
+							//Allow BK to be actioned
+							brewery[1][3]->setActionable(true);
 
 						}
 						else

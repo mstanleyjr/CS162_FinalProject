@@ -12,6 +12,7 @@
 #include "player.hpp"
 #include "ingredient.hpp"
 #include "intakes.hpp"
+#include "tank.hpp"
 
 class Game
 {

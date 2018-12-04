@@ -10,6 +10,7 @@ using std::make_shared;
 
 #include <string>
 using std::string;
+using std::to_string;
 
 #include <iostream>
 using std::cin;
