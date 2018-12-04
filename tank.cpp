@@ -9,7 +9,7 @@ Tank::Tank()
 	setActionable(false);
 	setDaysNeeded(0);
 	setDaysIn(0);
-	setMovable(bool);
+	setMovable(false);
 }
 
 Tank::Tank(int x, int y) : Space(x, y)
@@ -19,7 +19,7 @@ Tank::Tank(int x, int y) : Space(x, y)
 	setActionable(false);
 	setDaysNeeded(0);
 	setDaysIn(0);
-	setMovable(bool);
+	setMovable(false);
 }
 
 void Tank::makeCeiling()
