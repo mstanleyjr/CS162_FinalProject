@@ -22,6 +22,8 @@ using std::vector;
 #include <queue>
 using std::queue;
 
+#include "player.hpp"
+
 class Space
 {
 	private:
