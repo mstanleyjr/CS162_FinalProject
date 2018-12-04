@@ -16,6 +16,7 @@ class Game
 {
 private:
 		Space*** brewery;
+		Player* brewer;
 		int days;
 		int checkValidity(int, int);
 		int playerXCoord;

@@ -51,6 +51,7 @@ string Player::useItem()
 	if(full)
 	{
 		string s = items[0];
+		removeItem();
 		return s;
 	}
 	else

@@ -54,8 +54,10 @@ Game::Game()
 	brewery[6][1] = NULL;
 	brewery[6][1] = new Ingredient(6, 1);
 	brewery[6][1]->setName("Grain");
-	//Gotta override this mofo??
 	brewery[6][1]->addIngredient("Marris Otter");
+	brewery[6][1]->addIngredient("Pilsen");
+	brewery[6][1]->addIngredient("Roasted Barley");
+	brewery[6][1]->addIngredient("Crystal 60");
 
 	//Set Hops
 	delete brewery[8][1];
@@ -70,6 +72,7 @@ Game::Game()
 	brewery[7][3] = new Player(7, 3);
 	setPlayerX(7);
 	setPlayerY(3);
+	brewer = brewery[7][3];
 
 	for(int r = 0; r < 10; r++)
 	{
@@ -79,8 +82,7 @@ Game::Game()
 		}
 	}
 
-	cout << "List of grain: " << endl;
-	brewery[6][1]->printList();
+
 }
 
 Game::~Game()
@@ -115,6 +117,7 @@ void Game::setPointers(int r, int c)
 	{
 		brewery[r][c]->setEast(brewery[r][c + 1]);
 	}
+	brewer = brewery[getPlayerX()][getPlayerY()];
 }
 
 void Game::printBrewery()

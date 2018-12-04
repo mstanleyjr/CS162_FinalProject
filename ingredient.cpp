@@ -24,7 +24,14 @@ void Ingredient::makeCeiling()
 
 void Ingredient::action()
 {
-	cout << "Still working that " << endl;
+	//if()
+	//cout << "Please select what you would like from the following: " << endl;
+	//this->printList();
+	//int decision = checkValidity(1, 4)
+//	{
+	//	if
+	//}
+
 }
 
 void Ingredient::printList()
