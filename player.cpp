@@ -9,8 +9,7 @@ Player::Player()
 	setFilled(true);
 	setActionable(true);
 	full = false;
-	vector<string> temp(10);
-	items = temp;
+
 }
 
 Player::Player(int x, int y) : Space(x, y)
@@ -19,8 +18,7 @@ Player::Player(int x, int y) : Space(x, y)
 	setFilled(true);
 	setActionable(true);
 	full = false;
-	vector<string> temp(10);
-	items = temp;
+
 }
 
 void Player::makeCeiling()
@@ -30,22 +28,25 @@ void Player::makeCeiling()
 
 void Player::addItem(string s)
 {
-	items.push_back(s);
+	items.push(s);
 	full = true;
 
 }
 
 void Player::removeItem()
 {
-	items.pop_back();
-	full = false;
+	if(!items.empty())
+	{
+		items.pop();
+		full = false;
+	}
 }
 
 void Player::printItems()
 {
-	for(int i = 0; i < items.size(); i++)
+	while(!items.empty())
 	{
-		cout << items[i] << endl;
+		cout << items.front() << endl;
 	}
 }
 
@@ -53,7 +54,7 @@ string Player::useItem()
 {
 	if(full)
 	{
-		string s = items[0];
+		string s = items.front() ;
 		removeItem();
 		return s;
 	}
@@ -65,7 +66,7 @@ string Player::useItem()
 
 bool Player::hasItem()
 {
-	if(full)
+	if(!items.empty())
 	{
 		return true;
 	}

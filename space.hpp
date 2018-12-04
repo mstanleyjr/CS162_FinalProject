@@ -19,6 +19,9 @@ using std::endl;
 #include <vector>
 using std::vector;
 
+#include <queue>
+using std::queue;
+
 class Space
 {
 	private:
