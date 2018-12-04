@@ -27,28 +27,31 @@ void Player::makeCeiling()
 
 void Player::addItem(string s)
 {
-	items.push_back(s);
+	items->push_back(s);
 	full = true;
 
 }
 
 void Player::removeItem()
 {
-	items.pop_back();
+	items->pop_back();
 	full = false;
 }
 
 void Player::printItems()
 {
-	for(int i = 0; i < items.size(); i++)
+	if(!full)
 	{
-		cout << items[i] << endl;
+		for(int i = 0; i < items->size(); i++)
+		{
+			cout << items[i] << endl;
+		}
 	}
 }
 
 string Player::useItem()
 {
-	if(full)
+	if(items->size() != 0)
 	{
 		string s = items[0];
 		removeItem();
