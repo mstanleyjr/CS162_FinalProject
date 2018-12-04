@@ -233,24 +233,23 @@ void Game::move()
 		{
 			if(next->getName() == "Grain" || next->getName() == "Hops ")
 			{
-				if(next->getName() == "Grain" || next->getName() == "Hops ")
+				if(!(brewer.hasItem()))
 				{
-					if(!(brewer.hasItem()))
+					string s = next->getContents();
+					brewer.addItem(s);
+				}
+				else
+				{
+					cout << "You are at capacity, would you like to set your item down?" << endl;
+					cout << "1 = Yes     2 = No" << endl;
+					int choice = checkValidity(1, 2);
+					if (choice == 1)
 					{
-						string s = next->getContents();
-						brewer.addItem(s);
-					}
-					else
-					{
-						cout << "You are at capacity, would you like to set your item down?" << endl;
-						cout << "1 = Yes     2 = No" << endl;
-						int choice = checkValidity(1, 2);
-						if (choice == 1)
-						{
-							brewer.removeItem();
-						}
+						brewer.removeItem();
 					}
 				}
+
+			}
 			next->action();
 		}
 	}
@@ -272,28 +271,30 @@ void Game::move()
 		{
 			if(next->getName() == "Grain" || next->getName() == "Hops ")
 			{
-				if(next->getName() == "Grain" || next->getName() == "Hops ")
+
+				if(!(brewer.hasItem()))
 				{
-					if(!(brewer.hasItem()))
-					{
-						string s = next->getContents();
-						brewer.addItem(s);
-					}
-					else
-					{
-						cout << "You are at capacity, would you like to set your item down?" << endl;
-						cout << "1 = Yes     2 = No" << endl;
-						int choice = checkValidity(1, 2);
-						if (choice == 1)
-						{
-							brewer.removeItem();
-						}
-					}
+					string s = next->getContents();
+					brewer.addItem(s);
 				}
+				else
+				{
+					cout << "You are at capacity, would you like to set your item down?" << endl;
+					cout << "1 = Yes     2 = No" << endl;
+					int choice = checkValidity(1, 2);
+					if (choice == 1)
+					{
+						brewer.removeItem();
+					}
+
+				}
+
 			}
+
 			next->action();
 		}
 	}
+
 }
 
 void Game::setPlayerX(int x)
