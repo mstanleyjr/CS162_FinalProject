@@ -160,7 +160,7 @@ void Game::move()
 		{
 			if(next->getName() == "Grain" || next->getName() == "Hops ")
 			{
-				if(!(brewer.hasItem())
+				if(!(brewer.hasItem()))
 				{
 					string s = next->getContents();
 					brewer.addItem(s);
@@ -196,7 +196,7 @@ void Game::move()
 		{
 			if(next->getName() == "Grain" || next->getName() == "Hops ")
 			{
-				if(!(brewer.hasItem())
+				if(!(brewer.hasItem()))
 				{
 					string s = next->getContents();
 					brewer.addItem(s);
@@ -235,7 +235,7 @@ void Game::move()
 			{
 				if(next->getName() == "Grain" || next->getName() == "Hops ")
 				{
-					if(!(brewer.hasItem())
+					if(!(brewer.hasItem()))
 					{
 						string s = next->getContents();
 						brewer.addItem(s);
@@ -274,7 +274,7 @@ void Game::move()
 			{
 				if(next->getName() == "Grain" || next->getName() == "Hops ")
 				{
-					if(!(brewer.hasItem())
+					if(!(brewer.hasItem()))
 					{
 						string s = next->getContents();
 						brewer.addItem(s);
