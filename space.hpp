@@ -61,6 +61,7 @@ class Space
 		virtual bool didLeave();
 		virtual void action();
 		int checkValidity(int, int);
+		virtual void addIngredient(string);
 
 
 

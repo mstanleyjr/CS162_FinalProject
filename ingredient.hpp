@@ -18,7 +18,7 @@ class Ingredient : public Space
 		virtual void action() override;
 		void printList();
 		string returnIngredient(int);
-		void addIngredient(string);
+		void addIngredient(string) override;
 };
 
 #endif

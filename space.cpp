@@ -145,6 +145,10 @@ void Space::action()
 
 }
 
+void Space::addIngredient(string s)
+{
+	
+}
 
 int Space::checkValidity(int lower, int upper)
 {
