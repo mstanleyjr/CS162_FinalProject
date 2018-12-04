@@ -24,7 +24,7 @@ void Door::makeCeiling()
 
 }
 
-void Door::action()
+void Door::action(Player* b)
 {
 	cout << "Are you sure you would like to exit the brewhouse?" << endl;
 	cout << "1 - Yes" << endl << "2 - No" << endl;

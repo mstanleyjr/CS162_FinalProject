@@ -140,14 +140,14 @@ bool Space::didLeave()
 	return false;
 }
 
-void Space::action()
+void Space::action(Player* b)
 {
 
 }
 
 void Space::addIngredient(string s)
 {
-	
+
 }
 
 int Space::checkValidity(int lower, int upper)

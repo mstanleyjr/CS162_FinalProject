@@ -15,7 +15,7 @@ class Ingredient : public Space
 		Ingredient();
 		Ingredient(int, int);
 		virtual void makeCeiling() override;
-		virtual void action() override;
+		virtual void action(Player* ) override;
 		void printList();
 		string returnIngredient(int);
 		void addIngredient(string) override;

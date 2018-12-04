@@ -22,15 +22,26 @@ void Ingredient::makeCeiling()
 
 }
 
-void Ingredient::action()
+void Ingredient::action(Player* b)
 {
-	//if()
-	//cout << "Please select what you would like from the following: " << endl;
-	//this->printList();
-	//int decision = checkValidity(1, 4)
-//	{
-	//	if
-	//}
+	if(!b->hasItem())
+	{
+		cout << "Please select from the following: " << endl;
+		printList();
+		int decision = checkValidity(1, 4);
+		b->addItem(returnIngredient(decision));
+	}
+	else if (b->hasItem())
+	{
+		cout << "You are currently holding your capacity" << endl;
+		cout << "Would you like to set it down?" << endl;
+		cout << "1 = Yes     2 = No" << endl;
+		int decision = checkValidity(1, 2);
+		if(decision == 1)
+		{
+			b->removeItem();
+		}
+	}
 
 }
 

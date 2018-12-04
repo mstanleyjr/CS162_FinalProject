@@ -18,7 +18,7 @@ Player::Player(int x, int y) : Space(x, y)
 	setFilled(true);
 	setActionable(true);
 	full = false;
-	
+
 }
 
 void Player::makeCeiling()
@@ -47,6 +47,10 @@ void Player::printItems()
 	if(!items.empty())
 	{
 		cout << items.front() << endl;
+	}
+	else
+	{
+		cout << "None" << endl;
 	}
 }
 

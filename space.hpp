@@ -63,7 +63,7 @@ class Space
 		int getYCoord();
 		virtual void makeCeiling() = 0;
 		virtual bool didLeave();
-		virtual void action();
+		virtual void action(Player*);
 		int checkValidity(int, int);
 		virtual void addIngredient(string);
 
