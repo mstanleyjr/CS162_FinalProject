@@ -193,29 +193,32 @@ void Game::move()
 				if(brewer.hasItem())
 				{
 					string s = brewer.getItem();
+					cout << "Brewer is holding:" << s << ":" << endl;
 					if(next->getName() == "Mill ")
 					{
-						if(s != "Marris Otter" || s != "Pilsen" || s != "Roasted Barley" || s != "Crystal 60")
-						{
-							cout << "This item is not compatible" << endl;
-						}
-						else
+						if(s == "Marris Otter" || s == "Pilsen" || s == "Roasted Barley" || s == "Crystal 60")
 						{
 							brewer.removeItem();
 							next->action();
+
+						}
+						else
+						{
+							cout << "This item is not compatible" << endl;
 						}
 
 					}
 					else if(next->getName() == "BrewK")
 					{
-						if(s != "Simcoe" || s != "Citra" || s != "Mosaic" || s != "Columbus")
-						{
-							cout << "This item is not compatible" << endl;
-						}
-						else
+						if(s == "Simcoe" || s == "Citra" || s == "Mosaic" || s == "Columbus")
 						{
 							brewer.removeItem();
 							next->action();
+						}
+						else
+						{
+							cout << "This item is not compatible" << endl;
+
 						}
 					}
 				}
@@ -265,29 +268,32 @@ void Game::move()
 				if(brewer.hasItem())
 				{
 					string s = brewer.getItem();
+					cout << "Brewer is holding:" << s << ":" << endl;
 					if(next->getName() == "Mill ")
 					{
-						if(s != "Marris Otter" || s != "Pilsen" || s != "Roasted Barley" || s != "Crystal 60")
-						{
-							cout << "This item is not compatible" << endl;
-						}
-						else
+						if(s == "Marris Otter" || s == "Pilsen" || s == "Roasted Barley" || s == "Crystal 60")
 						{
 							brewer.removeItem();
 							next->action();
+
+						}
+						else
+						{
+							cout << "This item is not compatible" << endl;
 						}
 
 					}
 					else if(next->getName() == "BrewK")
 					{
-						if(s != "Simcoe" || s != "Citra" || s != "Mosaic" || s != "Columbus")
-						{
-							cout << "This item is not compatible" << endl;
-						}
-						else
+						if(s == "Simcoe" || s == "Citra" || s == "Mosaic" || s == "Columbus")
 						{
 							brewer.removeItem();
 							next->action();
+						}
+						else
+						{
+							cout << "This item is not compatible" << endl;
+
 						}
 					}
 				}
@@ -338,29 +344,32 @@ void Game::move()
 				if(brewer.hasItem())
 				{
 					string s = brewer.getItem();
+					cout << "Brewer is holding:" << s << ":" << endl;
 					if(next->getName() == "Mill ")
 					{
-						if(s != "Marris Otter" || s != "Pilsen" || s != "Roasted Barley" || s != "Crystal 60")
-						{
-							cout << "This item is not compatible" << endl;
-						}
-						else
+						if(s == "Marris Otter" || s == "Pilsen" || s == "Roasted Barley" || s == "Crystal 60")
 						{
 							brewer.removeItem();
 							next->action();
+
+						}
+						else
+						{
+							cout << "This item is not compatible" << endl;
 						}
 
 					}
 					else if(next->getName() == "BrewK")
 					{
-						if(s != "Simcoe" || s != "Citra" || s != "Mosaic" || s != "Columbus")
-						{
-							cout << "This item is not compatible" << endl;
-						}
-						else
+						if(s == "Simcoe" || s == "Citra" || s == "Mosaic" || s == "Columbus")
 						{
 							brewer.removeItem();
 							next->action();
+						}
+						else
+						{
+							cout << "This item is not compatible" << endl;
+
 						}
 					}
 				}
@@ -413,29 +422,32 @@ void Game::move()
 				if(brewer.hasItem())
 				{
 					string s = brewer.getItem();
+					cout << "Brewer is holding:" << s << ":" << endl;
 					if(next->getName() == "Mill ")
 					{
-						if(s != "Marris Otter" || s != "Pilsen" || s != "Roasted Barley" || s != "Crystal 60")
-						{
-							cout << "This item is not compatible" << endl;
-						}
-						else
+						if(s == "Marris Otter" || s == "Pilsen" || s == "Roasted Barley" || s == "Crystal 60")
 						{
 							brewer.removeItem();
 							next->action();
+
+						}
+						else
+						{
+							cout << "This item is not compatible" << endl;
 						}
 
 					}
 					else if(next->getName() == "BrewK")
 					{
-						if(s != "Simcoe" || s != "Citra" || s != "Mosaic" || s != "Columbus")
-						{
-							cout << "This item is not compatible" << endl;
-						}
-						else
+						if(s == "Simcoe" || s == "Citra" || s == "Mosaic" || s == "Columbus")
 						{
 							brewer.removeItem();
 							next->action();
+						}
+						else
+						{
+							cout << "This item is not compatible" << endl;
+
 						}
 					}
 				}
