@@ -362,7 +362,7 @@ void Game::play()
 		cout << "Day " << days + 1 << endl;
 		do{
 			printBrewery();
-			cout << "Inventory: " << brewery->printItems() << endl;
+			cout << "Inventory: " << brewer->printItems() << endl;
 			move();
 			for(int r = 0; r < 10; r++)
 			{
