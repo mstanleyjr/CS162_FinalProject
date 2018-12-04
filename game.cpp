@@ -1,4 +1,4 @@
-
+brewer.getItem();
 
 
 #include "game.hpp"
@@ -192,7 +192,7 @@ void Game::move()
 			{
 				if(brewer.hasItem())
 				{
-					string s = brewer.items.front();
+					string s = brewer.getItem();
 					if(next->getName() == "Mill ")
 					{
 						if(s != "Marris Otter" || s != "Pilsen" || s != "Roasted Barley" || s != "Crystal 60")
@@ -264,7 +264,7 @@ void Game::move()
 			{
 				if(brewer.hasItem())
 				{
-					string s = brewer.items.front();
+					string s = brewer.getItem();
 					if(next->getName() == "Mill ")
 					{
 						if(s != "Marris Otter" || s != "Pilsen" || s != "Roasted Barley" || s != "Crystal 60")
@@ -337,7 +337,7 @@ void Game::move()
 			{
 				if(brewer.hasItem())
 				{
-					string s = brewer.items.front();
+					string s = brewer.getItem();
 					if(next->getName() == "Mill ")
 					{
 						if(s != "Marris Otter" || s != "Pilsen" || s != "Roasted Barley" || s != "Crystal 60")
@@ -412,7 +412,7 @@ void Game::move()
 			{
 				if(brewer.hasItem())
 				{
-					string s = brewer.items.front();
+					string s = brewer.getItem();
 					if(next->getName() == "Mill ")
 					{
 						if(s != "Marris Otter" || s != "Pilsen" || s != "Roasted Barley" || s != "Crystal 60")

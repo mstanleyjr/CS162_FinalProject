@@ -21,8 +21,9 @@ class Player : public Space
 		void addItem(string);
 		void removeItem();
 		void printItems();
-		string useItem();
+		string getItem();
 		bool hasItem();
+
 
 
 

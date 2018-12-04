@@ -37,7 +37,7 @@ void Player::removeItem()
 {
 	if(!items.empty())
 	{
-		
+
 		items.pop();
 		full = false;
 	}
@@ -55,12 +55,12 @@ void Player::printItems()
 	}
 }
 
-string Player::useItem()
+string Player::getItem()
 {
 	if(full)
 	{
 		string s = items.front() ;
-		removeItem();
+
 		return s;
 	}
 	else

@@ -11,6 +11,7 @@
 #include "door.hpp"
 #include "player.hpp"
 #include "ingredient.hpp"
+#include "intakes.hpp"
 
 class Game
 {
