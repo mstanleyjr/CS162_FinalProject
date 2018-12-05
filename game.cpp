@@ -158,6 +158,11 @@ void Game::setPointers(int r, int c)
 	{
 		brewery[r][c]->setEast(brewery[r][c + 1]);
 	}
+	brewery[r][c]->setFV1(brewery[1][5]);
+	brewery[r][c]->setFV2(brewery[2][5]);
+	brewery[r][c]->setFV3(brewery[3][5]);
+	brewery[r][c]->setFV4(brewery[4][5]);
+	brewery[r][c]->setBBT(brewery[5][5]);
 
 }
 

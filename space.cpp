@@ -28,8 +28,6 @@ Space::Space(int x, int y)
 	setName("Space");
 	setActionable(false);
 	setFilled(false);
-
-
 }
 
 void Space::setNorth(Space* s)
@@ -50,6 +48,56 @@ void Space::setEast(Space* s)
 void Space::setWest(Space* s)
 {
 	this->west = s;
+}
+
+void Space::setFV1(Space* s)
+{
+	this->FV1 = s;
+}
+
+void Space::setFV2(Space* s)
+{
+	this->FV2 = s;
+}
+
+void Space::setFV3(Space* s)
+{
+	this->FV3 = s;
+}
+
+void Space::setFV4(Space* s)
+{
+	this->FV4 = s;
+}
+
+void Space::setBBT(Space* s)
+{
+	this->BBT = s;
+}
+
+Space* Space::getFV1()
+{
+	return this->FV1;
+}
+
+Space* Space::getFV2()
+{
+	return this->FV2;
+}
+
+Space* Space::getFV3()
+{
+	return this->FV3;
+}
+
+Space* Space::getFV4()
+{
+	return this->FV4;
+}
+
+Space* Space::getBBT()
+{
+	return this->BBT;
 }
 
 Space* Space::getNorth()
@@ -106,6 +154,17 @@ void Space::setFilled(bool f)
 void Space::addContents(string c)
 {
 	list.push_back(c);
+}
+
+void Space::removeContents()
+{
+	if(!(list.empty()))
+	{
+		for(int i = 0; i < this->list.size(); i++)
+		{
+			list.pop_back();
+		}
+	}
 }
 
 void Space::printContents()
