@@ -39,6 +39,28 @@ void Tank::action()
 		Space* brewK = this->getEast();
 		brewK->setActionable(true);
 	}
+	else if(this->getName() == " BBT ")
+	{
+		//Brite tank shit
+		cout << "This is for Brite" << endl;
+	}
+	else
+	{
+		Space* brite = this->getBBT();
+		if(brite->list.empty())
+		{
+			brite->addContents("Full");
+			cout << "You have successfully racked your beer to the Brite Beer Tank" << endl;
+			cout << "Beer takes 3 days to ferment" << endl;
+			this->removeContents();
+			this->setActionable(false);
+		}
+		else
+		(
+			cout << "The Brite Beer Tank is full!" << endl;
+			cout << "You must keg first!" << endl;
+		)
+	}
 }
 
 void Tank::printContents()

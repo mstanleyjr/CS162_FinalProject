@@ -273,7 +273,16 @@ void Game::move()
 			}
 			else
 			{
+				//This is for the tanks (aka non item actions)
 				next->action();
+				//Make everything unactionable
+				brewery[6][1]->setActionable(false);
+				brewery[8][1]->setActionable(false);
+				getFV1()->setActionable(false);
+				getFV2()->setActionable(false);
+				getFV3()->setActionable(false);
+				getFV4()->setActionable(false);
+				getBBT()->setActionable(false);
 			}
 
 		}
@@ -631,13 +640,8 @@ void Game::play()
 			printBrewery();
 			cout << "Inventory: " << endl;
 			brewer.printItems();
-			cout << "Tanks: " << endl;
-			for(int i = 1; i < 6; i++)
-			{
-				cout << brewery[i][5]->getName() << ": ";
-				brewery[i][5]->printContents();
-				cout << endl;
-			}
+			printTanks();
+
 			move();
 			for(int r = 0; r < 10; r++)
 			{
@@ -657,5 +661,49 @@ void Game::play()
 		{
 			days = 20;
 		}
+	}
+}
+
+void Game::daysEnd()
+{
+
+}
+
+void Game::printTanks()
+{
+	cout << "Tanks: " << endl;
+	cout << getFV1()->getName() << ": ";
+	getFV1()->printContents();
+	if(!(getFV1()->list.empty())
+	{
+		cout << "Days in tank: " << ferm1.getDaysIn() << endl;
+	}
+
+	cout << getFV2()->getName() << ": ";
+	getFV2()->printContents();
+	if(!(getFV2()->list.empty())
+	{
+		cout << "Days in tank: " << ferm2.getDaysIn() << endl;
+	}
+
+	cout << getFV3()->getName() << ": ";
+	getFV3()->printContents();
+	if(!(getFV3()->list.empty())
+	{
+		cout << "Days in tank: " << ferm3.getDaysIn() << endl;
+	}
+
+	cout << getFV4()->getName() << ": ";
+	getFV4()->printContents();
+	if(!(getFV4()->list.empty())
+	{
+		cout << "Days in tank: " << ferm4.getDaysIn() << endl;
+	}
+
+	cout << getBBT()->getName() << ": ";
+	getBBT()->printContents();
+	if(!(getBBT()->list.empty())
+	{
+		cout << "Days in tank: " << brite.getDaysIn() << endl;
 	}
 }

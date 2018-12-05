@@ -41,6 +41,8 @@ private:
 		Tank ferm3;
 		Tank ferm4;
 		Tank brite;
+		void printTanks();
+		void daysEnd();
 
 
 };
