@@ -41,6 +41,18 @@ void Tank::action()
 	}
 }
 
+void Tank::printContents()
+{
+	if(this->list.empty())
+	{
+		cout << "Empty";
+	}
+	else
+	{
+		cout << this->list.at(0);
+	}
+}
+
 void Tank::setDaysNeeded(int d)
 {
 	this->daysNeeded = d;

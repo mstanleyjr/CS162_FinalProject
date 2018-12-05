@@ -73,7 +73,7 @@ class Space
 		void addContents(string);
 		void removeContents();
 		string getContents();
-		void printContents();
+		virtual void printContents();
 		void setXCoord(int);
 		int getXCoord();
 		void setYCoord(int);

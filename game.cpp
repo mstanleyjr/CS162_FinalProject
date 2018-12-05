@@ -111,7 +111,7 @@ Game::Game()
 	delete brewery[5][5];
 	brewery[5][5] = NULL;
 	brewery[5][5] = new Tank(5, 5);
-	brewery[5][5]->setName("KegT ");
+	brewery[5][5]->setName(" BBT ");
 
 
 
@@ -595,6 +595,12 @@ void Game::play()
 			printBrewery();
 			cout << "Inventory: " << endl;
 			brewer.printItems();
+			cout << "Tanks: " << endl;
+			for(int i = 1; i < 6; i++)
+			{
+				brewery[i][5]->printContents();
+				cout << endl;
+			}
 			move();
 			for(int r = 0; r < 10; r++)
 			{

@@ -17,6 +17,7 @@ class Tank : public Space
 		Tank(int, int);
 		virtual void makeCeiling() override;
 		virtual void action() override;
+		virtual void printContents() override;
 		void setDaysNeeded(int);
 		int getDaysNeeded();
 		void setDaysIn(int);
