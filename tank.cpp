@@ -1,3 +1,12 @@
+/******************************************************************************
+** Program Name: Final Project - Brewery Simulator
+** Author: Michael Stanley
+** Date: 12/4/2018
+** Description: This is the source file for the tank class. This is used for the
+** FV's, BBT, and MT. Basically any none string intaking or out putting object.
+** These move beer around using the pointers for FV's and BBT. 
+*******************************************************************************/
+
 
 
 #include "tank.hpp"

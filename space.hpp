@@ -1,12 +1,17 @@
-
+/******************************************************************************
+** Program Name: Final Project - Brewery Simulator
+** Author: Michael Stanley
+** Date: 12/4/2018
+** Description: This is the header file for the simulator. It holds all the space pointers
+** for each cardinal direction for use on the playing board. It also holds specifc pointers
+** for certain tanks. Because these tanks don't move, all of the board pieces can use them to point
+** to the same space object on the board. The object's list is public so that other classes
+** can "read" what is in each tank, much like documentation in a real brewhouse
+*******************************************************************************/
 
 #ifndef SPACE_HPP
 #define SPACE_HPP
 
-
-#include <memory>
-using std::shared_ptr;
-using std::make_shared;
 
 #include <string>
 using std::string;
@@ -19,9 +24,6 @@ using std::endl;
 
 #include <vector>
 using std::vector;
-
-#include <queue>
-using std::queue;
 
 class Space
 {

@@ -1,4 +1,10 @@
-
+/******************************************************************************
+** Program Name: Final Project - Brewery Simulator
+** Author: Michael Stanley
+** Date: 12/4/2018
+** Description: This is the header file for the intake class which will take and "use"
+** ingredients from the user.
+*******************************************************************************/
 
 
 #ifndef INTAKES_HPP

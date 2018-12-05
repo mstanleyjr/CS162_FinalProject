@@ -1,5 +1,10 @@
-
-
+/******************************************************************************
+** Program Name: Final Project - Brewery Simulator
+** Author: Michael Stanley
+** Date: 12/4/2018
+** Description: This is the header file for the player class. It is used to hold
+** items for the user and traverse the brewhouse 
+*******************************************************************************/
 
 #ifndef PLAYER_HPP
 #define PLAYER_HPP

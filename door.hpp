@@ -1,4 +1,10 @@
-
+/******************************************************************************
+** Program Name: Final Project - Brewery Simulator
+** Author: Michael Stanley
+** Date: 12/4/2018
+** Description: This is the header file for the door class, derived of Space.
+** It allows the user to leave the brewhouse 
+*******************************************************************************/
 
 
 #ifndef DOOR_HPP

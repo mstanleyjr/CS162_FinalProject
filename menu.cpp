@@ -1,3 +1,14 @@
+/******************************************************************************
+** Program Name: Final Project - Brewery Simulator
+** Author: Michael Stanley
+** Date: 12/4/2018
+** Description: This is the source file for the menu. It starts by asking the user
+** if they would like to play, then plays the game in the mainMenu and then asks
+** if the user would like to play again. 
+*******************************************************************************/
+
+
+
 #include "menu.hpp"
 
 Menu::Menu()

@@ -1,5 +1,10 @@
-
-
+/******************************************************************************
+** Program Name: Final Project - Brewery Simulator
+** Author: Michael Stanley
+** Date: 12/4/2018
+** Description: This is the source code for the player object. This is used by
+** the user to traverse the brewery and holds items that the user can pick up and use 
+*******************************************************************************/
 
 #include "player.hpp"
 

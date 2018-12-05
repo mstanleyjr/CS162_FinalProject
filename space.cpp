@@ -1,5 +1,11 @@
-
-
+/******************************************************************************
+** Program Name: Final Project - Brewery Simulator
+** Author: Michael Stanley
+** Date: 12/4/2018
+** Description: This is the source code for the space class. An abstract base class
+** for the the playing space. It sets up each of its derived classes with success with
+** a multitude of functions for calling and retrieving data.
+*******************************************************************************/
 
 #include "space.hpp"
 

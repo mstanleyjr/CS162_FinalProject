@@ -1,3 +1,11 @@
+###############################################################################
+## Program Name: Final Project - Brewery Simulator
+## Author: Michael Stanley
+## Date: 12/4/2018
+## Description: This is the makefile for the simulator. It compiles each class
+## individually and then all together. It also has a clean function.
+###############################################################################
+
 
 FinalProject_Stanley_Michael: menu.o floor.o tank.o intakes.o ingredient.o player.o door.o space.o wall.o game.o main.o
 	g++ -g -std=c++0x menu.o floor.o tank.o intakes.o player.o ingredient.o door.o space.o game.o wall.o main.o -o FinalProject_Stanley_Michael

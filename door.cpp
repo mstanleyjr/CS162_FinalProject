@@ -1,4 +1,11 @@
-
+/******************************************************************************
+** Program Name: Final Project - Brewery Simulator
+** Author: Michael Stanley
+** Date: 12/4/2018
+** Description: This is the source file for the door class, derived of Space.
+** This object class is special because it dictates the time that the user
+** has in the game when they leave. 
+*******************************************************************************/
 
 
 #include "door.hpp"

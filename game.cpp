@@ -1,4 +1,11 @@
-
+/******************************************************************************
+** Program Name: Final Project - Brewery Simulator
+** Author: Michael Stanley
+** Date: 12/4/2018
+** Description: This is the source file for the game class. This is where most of
+** the action takes place as it adjudicates what actions can and cannot be taken.
+** The play function will loop until it reaches 30 days or the player chooses to leave 
+*******************************************************************************/
 
 
 #include "game.hpp"

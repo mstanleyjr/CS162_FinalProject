@@ -1,4 +1,10 @@
-
+/******************************************************************************
+** Program Name: Final Project - Brewery Simulator
+** Author: Michael Stanley
+** Date: 12/4/2018
+** Description: This is the source file for the ingredient class. This class is
+** a child of Space to help differentiate the grain and hops 
+*******************************************************************************/
 
 #include "ingredient.hpp"
 
