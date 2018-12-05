@@ -1,14 +1,19 @@
 
 
 
-#include "game.hpp"
-#include "space.hpp"
-#include "floor.hpp"
+#include "menu.hpp"
 
 int main()
 
 {
-	Game g1;
-	g1.play();
+	Menu m1;
+	int start = m1.startMenu();
+	if(start == 1)
+	{
+		do{
+			m1.mainMenu();
+		}while (m1.endMenu());
+	}
+
 	return 0;
 }

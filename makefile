@@ -32,5 +32,8 @@ intakes.o: intakes.hpp intakes.cpp
 tank.o: tank.hpp tank.cpp
 	g++ -g -std=c++0x -c tank.cpp
 
+menu.o: menu.hpp menu.cpp
+	g++ -g -std=c++0x -c menu.cpp 
+
 clean:
 	rm *.o FinalProject_Stanley_Michael
