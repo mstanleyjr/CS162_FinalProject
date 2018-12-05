@@ -104,7 +104,7 @@ Game::Game()
 		brewery[i][5] = new Tank(i, 5);
 		string name = " FV" + to_string(i) + " ";
 		brewery[i][5]->setName(name);
-		Space* temp = brewery[i][5];
+
 	}
 	ferm1.setDaysNeeded(7);
 	ferm2.setDaysNeeded(7);
@@ -261,7 +261,7 @@ void Game::move()
 						}
 					}
 				}
-				else if(!(brewer.hasItem()))
+				else if(!(brewer.hasItem()) && !(next->list.empty()))
 				{
 					//This can only happen to the BK
 					next->action();
@@ -270,6 +270,10 @@ void Game::move()
 					brewery[6][1]->setActionable(false);
 					brewery[8][1]->setActionable(false);
 				}
+			}
+			else if(next->getName() == "MashT")
+			{
+				next->action();
 			}
 			else
 			{
@@ -355,13 +359,17 @@ void Game::move()
 						}
 					}
 				}
-				else if(!(brewer.hasItem()))
+				else if(!(brewer.hasItem()) && !(next->list.empty()))
 				{
 					//This can only happen to the BK
 					next->action();
 					brewery[6][1]->setActionable(false);
 					brewery[8][1]->setActionable(false);
 				}
+			}
+			else if(next->getName() == "MashT")
+			{
+				next->action();
 			}
 			else
 			{
@@ -439,13 +447,17 @@ void Game::move()
 						}
 					}
 				}
-				else if(!(brewer.hasItem()))
+				else if(!(brewer.hasItem()) && !(next->list.empty()))
 				{
 					//This can only happen to the BK
 					next->action();
 					brewery[6][1]->setActionable(false);
 					brewery[8][1]->setActionable(false);
 				}
+			}
+			else if(next->getName() == "MashT")
+			{
+				next->action();
 			}
 			else
 			{
@@ -525,13 +537,17 @@ void Game::move()
 						}
 					}
 				}
-				else if(!(brewer.hasItem()))
+				else if(!(brewer.hasItem()) && !(next->list.empty()))
 				{
 					//This can only happen to the BK
 					next->action();
 					brewery[6][1]->setActionable(false);
 					brewery[8][1]->setActionable(false);
 				}
+			}
+			else if(next->getName() == "MashT")
+			{
+				next->action();
 			}
 			else
 			{
