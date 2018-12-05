@@ -219,7 +219,6 @@ void Game::move()
 				if(brewer.hasItem())
 				{
 					string s = brewer.getItem();
-					cout << "Brewer is holding:" << s << ":" << endl;
 					if(next->getName() == "Mill ")
 					{
 						if(s == "Marris Otter" || s == "Pilsen" || s == "Roasted Barley" || s == "Crystal 60")
@@ -297,7 +296,6 @@ void Game::move()
 				if(brewer.hasItem())
 				{
 					string s = brewer.getItem();
-					cout << "Brewer is holding:" << s << ":" << endl;
 					if(next->getName() == "Mill ")
 					{
 						if(s == "Marris Otter" || s == "Pilsen" || s == "Roasted Barley" || s == "Crystal 60")
@@ -375,7 +373,6 @@ void Game::move()
 				if(brewer.hasItem())
 				{
 					string s = brewer.getItem();
-					cout << "Brewer is holding:" << s << ":" << endl;
 					if(next->getName() == "Mill ")
 					{
 						if(s == "Marris Otter" || s == "Pilsen" || s == "Roasted Barley" || s == "Crystal 60")
@@ -455,7 +452,6 @@ void Game::move()
 				if(brewer.hasItem())
 				{
 					string s = brewer.getItem();
-					cout << "Brewer is holding:" << s << ":" << endl;
 					if(next->getName() == "Mill ")
 					{
 						if(s == "Marris Otter" || s == "Pilsen" || s == "Roasted Barley" || s == "Crystal 60")
@@ -590,6 +586,7 @@ void Game::play()
 	{
 		cout << "Day " << days + 1 << endl;
 		do{
+			brewery[8][3]->action();
 			printBrewery();
 			cout << "Inventory: " << endl;
 			brewer.printItems();
