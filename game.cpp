@@ -225,8 +225,8 @@ void Game::move()
 						{
 							brewer.removeItem();
 							next->action();
-							//Allow BK to be actioned
-							brewery[1][3]->setActionable(true);
+							//Allow MT to be actioned
+							brewery[1][2]->setActionable(true);
 
 
 						}
@@ -302,8 +302,8 @@ void Game::move()
 						{
 							brewer.removeItem();
 							next->action();
-							//Allow BK to be actioned
-							brewery[1][3]->setActionable(true);
+							//Allow MT to be actioned
+							brewery[1][2]->setActionable(true);
 
 						}
 						else
@@ -379,8 +379,8 @@ void Game::move()
 						{
 							brewer.removeItem();
 							next->action();
-							//Allow BK to be actioned
-							brewery[1][3]->setActionable(true);
+							//Allow MT to be actioned
+							brewery[1][2]->setActionable(true);
 
 						}
 						else
@@ -458,8 +458,8 @@ void Game::move()
 						{
 							brewer.removeItem();
 							next->action();
-							//Allow BK to be actioned
-							brewery[1][3]->setActionable(true);
+							//Allow MT to be actioned
+							brewery[1][2]->setActionable(true);
 
 						}
 						else

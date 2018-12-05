@@ -29,7 +29,16 @@ void Tank::makeCeiling()
 
 void Tank::action()
 {
-
+	if(this->getName() == "MashT")
+	{
+		cout << "Your mash is a success!!" << endl;
+		cout << "The sparge and lauter to BrewK was great!" << endl;
+		cout << "Now add hops to Brewk!" << endl;
+		this->setActionable(false);
+		//This might fail
+		Space* brewK = this->getEast();
+		brewk->setActionable(true);
+	}
 }
 
 void Tank::setDaysNeeded(int d)
