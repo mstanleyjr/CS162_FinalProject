@@ -284,19 +284,19 @@ void Game::move()
 				{
 					totalBeer += 10;
 				}
-				if(this->getName() == " FV1 ")
+				if(next->getName() == " FV1 ")
 				{
 					ferm1.setDaysIn(0);
 				}
-				if(this->getName() == " FV2 ")
+				if(next->getName() == " FV2 ")
 				{
 					ferm2.setDaysIn(0);
 				}
-				if(this->getName() == " FV3 ")
+				if(next->getName() == " FV3 ")
 				{
 					ferm3.setDaysIn(0);
 				}
-				if(this->getName() == " FV4 ")
+				if(next->getName() == " FV4 ")
 				{
 					ferm4.setDaysIn(0);
 				}
@@ -399,19 +399,19 @@ void Game::move()
 				{
 					totalBeer += 10;
 				}
-				if(this->getName() == " FV1 ")
+				if(next->getName() == " FV1 ")
 				{
 					ferm1.setDaysIn(0);
 				}
-				if(this->getName() == " FV2 ")
+				if(next->getName() == " FV2 ")
 				{
 					ferm2.setDaysIn(0);
 				}
-				if(this->getName() == " FV3 ")
+				if(next->getName() == " FV3 ")
 				{
 					ferm3.setDaysIn(0);
 				}
-				if(this->getName() == " FV4 ")
+				if(next->getName() == " FV4 ")
 				{
 					ferm4.setDaysIn(0);
 				}
@@ -515,19 +515,19 @@ void Game::move()
 				{
 					totalBeer += 10;
 				}
-				if(this->getName() == " FV1 ")
+				if(next->getName() == " FV1 ")
 				{
 					ferm1.setDaysIn(0);
 				}
-				if(this->getName() == " FV2 ")
+				if(next->getName() == " FV2 ")
 				{
 					ferm2.setDaysIn(0);
 				}
-				if(this->getName() == " FV3 ")
+				if(next->getName() == " FV3 ")
 				{
 					ferm3.setDaysIn(0);
 				}
-				if(this->getName() == " FV4 ")
+				if(next->getName() == " FV4 ")
 				{
 					ferm4.setDaysIn(0);
 				}
@@ -633,19 +633,19 @@ void Game::move()
 				{
 					totalBeer += 10;
 				}
-				if(this->getName() == " FV1 ")
+				if(next->getName() == " FV1 ")
 				{
 					ferm1.setDaysIn(0);
 				}
-				if(this->getName() == " FV2 ")
+				if(next->getName() == " FV2 ")
 				{
 					ferm2.setDaysIn(0);
 				}
-				if(this->getName() == " FV3 ")
+				if(next->getName() == " FV3 ")
 				{
 					ferm3.setDaysIn(0);
 				}
-				if(this->getName() == " FV4 ")
+				if(next->getName() == " FV4 ")
 				{
 					ferm4.setDaysIn(0);
 				}
