@@ -21,6 +21,10 @@ Player::Player(int x, int y) : Space(x, y)
 
 }
 
+Player::~Player()
+{
+
+}
 
 void Player::makeCeiling()
 {

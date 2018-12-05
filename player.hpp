@@ -16,6 +16,7 @@ class Player : public Space
 	public:
 
 		Player();
+		~Player();
 		Player(int, int);
 		virtual void makeCeiling() override;
 		void addItem(string);

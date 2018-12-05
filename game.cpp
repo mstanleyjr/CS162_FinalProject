@@ -138,9 +138,6 @@ Game::~Game()
 	}
 	delete[] brewery;
 	brewery = NULL;
-
-	delete brewer;
-	brewer = NULL;
 }
 
 void Game::setPointers(int r, int c)
