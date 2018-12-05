@@ -104,6 +104,7 @@ Game::Game()
 		brewery[i][5] = new Tank(i, 5);
 		string name = " FV" + to_string(i) + " ";
 		brewery[i][5]->setName(name);
+		brewery[i][5]->setDaysNeeded(7);
 
 	}
 
@@ -112,6 +113,7 @@ Game::Game()
 	brewery[5][5] = NULL;
 	brewery[5][5] = new Tank(5, 5);
 	brewery[5][5]->setName(" BBT ");
+	brewery[5][5]->setDaysNeeded(3);
 
 
 
