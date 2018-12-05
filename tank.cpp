@@ -56,10 +56,10 @@ void Tank::action()
 			this->setActionable(false);
 		}
 		else
-		(
+		{
 			cout << "The Brite Beer Tank is full!" << endl;
 			cout << "You must keg first!" << endl;
-		)
+		}
 	}
 }
 
