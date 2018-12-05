@@ -30,26 +30,32 @@ void Intakes::action()
 		cout << "Beer takes 7 days to ferment!" << endl;
 		this->addContents("Hops");
 	}
-	else if(this->getName() == "BrewK")
+	else if(this->getName() == "BrewK" && !(this->list.empty()))
 	{
-		if(this->getFV1()->list.empty())
+		Space* ferm1 = this->getFV1();
+		Space* ferm2 = this->getFV2();
+		Space* ferm3 = this->getFV3();
+		Space* ferm4 = this->getFV4();
+
+
+		if(ferm1->list.empty())
 		{
-			this->getFV1()->addContents("Full");
+			ferm1->addContents("Full");
 			cout << "Your beer is in FV1" << endl;
 		}
-		else if (this->getFV2()->list.empty())
+		else if (ferm2->list.empty())
 		{
-			this->getFV2()->addContents("Full");
+			ferm2->addContents("Full");
 			cout << "Your beer is in FV2" << endl;
 		}
-		else if (this->getFV3()->list.empty())
+		else if (ferm3->list.empty())
 		{
-			this->getFV3()->addContents("Full");
+			ferm3->addContents("Full");
 			cout << "Your beer is in FV3" << endl;
 		}
-		else if (this->getFV4()->list.empty())
+		else if (ferm4->list.empty())
 		{
-			this->getFV4()->addContents("Full");
+			ferm4->addContents("Full");
 			cout << "Your beer is in FV4" << endl;
 		}
 		else

@@ -598,6 +598,7 @@ void Game::play()
 			cout << "Tanks: " << endl;
 			for(int i = 1; i < 6; i++)
 			{
+				cout << brewery[i][5]->getName() << ": ";
 				brewery[i][5]->printContents();
 				cout << endl;
 			}
