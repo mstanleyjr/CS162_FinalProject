@@ -21,6 +21,12 @@ Player::Player(int x, int y) : Space(x, y)
 
 }
 
+Player::~Player()
+{
+	delete items;
+	items = NULL;
+}
+
 void Player::makeCeiling()
 {
 

@@ -138,6 +138,9 @@ Game::~Game()
 	}
 	delete[] brewery;
 	brewery = NULL;
+
+	delete brewer;
+	brewer = NULL;
 }
 
 void Game::setPointers(int r, int c)
@@ -586,7 +589,7 @@ void Game::play()
 	{
 		cout << "Day " << days + 1 << endl;
 		do{
-			brewery[8][3]->action();
+
 			printBrewery();
 			cout << "Inventory: " << endl;
 			brewer.printItems();
@@ -600,6 +603,7 @@ void Game::play()
 			}
 
 		} while(!(brewery[8][3]->didLeave()));
+		brewery[8][3]->action();
 		brewer.removeItem();
 		cout << "Would you like to keep playing?" << endl;
 		cout << "1 - Yes	    2 - No" << endl;
