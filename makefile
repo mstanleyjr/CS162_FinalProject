@@ -1,6 +1,6 @@
 
-FinalProject_Stanley_Michael: floor.o tank.o intakes.o ingredient.o player.o door.o space.o wall.o game.o main.o
-	g++ -g -std=c++0x floor.o tank.o intakes.o player.o ingredient.o door.o space.o game.o wall.o main.o -o FinalProject_Stanley_Michael
+FinalProject_Stanley_Michael: menu.o floor.o tank.o intakes.o ingredient.o player.o door.o space.o wall.o game.o main.o
+	g++ -g -std=c++0x menu.o floor.o tank.o intakes.o player.o ingredient.o door.o space.o game.o wall.o main.o -o FinalProject_Stanley_Michael
 
 main.o: main.cpp
 	g++ -g -std=c++0x -c main.cpp
@@ -33,7 +33,7 @@ tank.o: tank.hpp tank.cpp
 	g++ -g -std=c++0x -c tank.cpp
 
 menu.o: menu.hpp menu.cpp
-	g++ -g -std=c++0x -c menu.cpp 
+	g++ -g -std=c++0x -c menu.cpp
 
 clean:
 	rm *.o FinalProject_Stanley_Michael
