@@ -55,22 +55,7 @@ void Tank::action()
 			cout << "Beer takes 3 days to ferment" << endl;
 			this->removeContents();
 			this->setActionable(false);
-			if(this->getName() == " FV1 ")
-			{
-				ferm1.setDaysIn(0);
-			}
-			if(this->getName() == " FV2 ")
-			{
-				ferm2.setDaysIn(0);
-			}
-			if(this->getName() == " FV3 ")
-			{
-				ferm3.setDaysIn(0);
-			}
-			if(this->getName() == " FV4 ")
-			{
-				ferm4.setDaysIn(0);
-			}
+
 		}
 		else
 		{

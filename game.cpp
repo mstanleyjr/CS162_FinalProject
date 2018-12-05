@@ -284,6 +284,22 @@ void Game::move()
 				{
 					totalBeer += 10;
 				}
+				if(this->getName() == " FV1 ")
+				{
+					ferm1.setDaysIn(0);
+				}
+				if(this->getName() == " FV2 ")
+				{
+					ferm2.setDaysIn(0);
+				}
+				if(this->getName() == " FV3 ")
+				{
+					ferm3.setDaysIn(0);
+				}
+				if(this->getName() == " FV4 ")
+				{
+					ferm4.setDaysIn(0);
+				}
 				//Make everything unactionable
 				brewery[6][1]->setActionable(false);
 				brewery[8][1]->setActionable(false);
@@ -382,6 +398,22 @@ void Game::move()
 				if(next->getName() == " BBT ")
 				{
 					totalBeer += 10;
+				}
+				if(this->getName() == " FV1 ")
+				{
+					ferm1.setDaysIn(0);
+				}
+				if(this->getName() == " FV2 ")
+				{
+					ferm2.setDaysIn(0);
+				}
+				if(this->getName() == " FV3 ")
+				{
+					ferm3.setDaysIn(0);
+				}
+				if(this->getName() == " FV4 ")
+				{
+					ferm4.setDaysIn(0);
 				}
 				//Make everything unactionable
 				brewery[6][1]->setActionable(false);
@@ -482,6 +514,22 @@ void Game::move()
 				if(next->getName() == " BBT ")
 				{
 					totalBeer += 10;
+				}
+				if(this->getName() == " FV1 ")
+				{
+					ferm1.setDaysIn(0);
+				}
+				if(this->getName() == " FV2 ")
+				{
+					ferm2.setDaysIn(0);
+				}
+				if(this->getName() == " FV3 ")
+				{
+					ferm3.setDaysIn(0);
+				}
+				if(this->getName() == " FV4 ")
+				{
+					ferm4.setDaysIn(0);
 				}
 				//Make everything unactionable
 				brewery[6][1]->setActionable(false);
@@ -584,6 +632,22 @@ void Game::move()
 				if(next->getName() == " BBT ")
 				{
 					totalBeer += 10;
+				}
+				if(this->getName() == " FV1 ")
+				{
+					ferm1.setDaysIn(0);
+				}
+				if(this->getName() == " FV2 ")
+				{
+					ferm2.setDaysIn(0);
+				}
+				if(this->getName() == " FV3 ")
+				{
+					ferm3.setDaysIn(0);
+				}
+				if(this->getName() == " FV4 ")
+				{
+					ferm4.setDaysIn(0);
 				}
 				//Make everything unactionable
 				brewery[6][1]->setActionable(false);
