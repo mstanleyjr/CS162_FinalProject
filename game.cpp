@@ -894,6 +894,7 @@ void Game::printTanks()
 	brewery[1][1]->getBBT()->printContents();
 	if(!(brewery[1][1]->getBBT()->list.empty()))
 	{
-		cout << "   Days in tank: " << brite.getDaysIn() << endl;
+		cout << "   Days in tank: " << brite.getDaysIn();
 	}
+	cout << endl;
 }
