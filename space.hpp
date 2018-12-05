@@ -38,7 +38,6 @@ class Space
 		string name;
 		bool	actionable;
 		bool	filled;
-		vector<string> list;
 		int xCoord;
 		int yCoord;
 
@@ -83,6 +82,7 @@ class Space
 		virtual bool didLeave();
 		virtual void action();
 		int checkValidity(int, int);
+		vector<string> list;
 
 
 
