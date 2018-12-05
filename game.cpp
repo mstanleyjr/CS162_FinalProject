@@ -753,7 +753,7 @@ int Game::checkValidity(int lower, int upper)
 
 void Game::play()
 {
-	for(days; days < 20; days++)
+	for(days; days < 30; days++)
 	{
 		cout << "Day " << days + 1 << endl;
 		do{
@@ -776,6 +776,17 @@ void Game::play()
 
 		daysEnd();
 
+	}
+
+
+	cout << "You brewed and kegged: " << totalBeer << endl;
+	if (totalBeer > 50)
+	{
+		cout << "Congrats!! You're on your way to becoming a master brewer!" << endl;
+	}
+	else
+	{
+		cout << "Ouch! Looks like you need to spend more time as a cellarperson!" << endl;
 	}
 }
 
