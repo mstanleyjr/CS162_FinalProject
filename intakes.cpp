@@ -32,24 +32,24 @@ void Intakes::action()
 	}
 	else if(this->getName() == "BrewK")
 	{
-		if(FV1->list.empty())
+		if(this->getFV1()->list.empty())
 		{
-			FV1->addContents("Full");
+			this->getFV1()->addContents("Full");
 			cout << "Your beer is in FV1" << endl;
 		}
-		else if (FV2->list.empty())
+		else if (this->getFV2()->list.empty())
 		{
-			FV2->addContents("Full");
+			this->getFV2()->addContents("Full");
 			cout << "Your beer is in FV2" << endl;
 		}
-		else if (FV3->list.empty())
+		else if (this->getFV3()->list.empty())
 		{
-			FV3->addContents("Full");
+			this->getFV3()->addContents("Full");
 			cout << "Your beer is in FV3" << endl;
 		}
-		else if (FV4->list.empty())
+		else if (this->getFV4()->list.empty())
 		{
-			FV4->addContents("Full");
+			this->getFV4()->addContents("Full");
 			cout << "Your beer is in FV4" << endl;
 		}
 		else
