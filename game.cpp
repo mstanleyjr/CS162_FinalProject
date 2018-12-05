@@ -626,12 +626,13 @@ void Game::move()
 			{
 				next->action();
 			}
-			else
+			else if (brewery[1][1]->getBBT()->list.empty())
 			{
 				next->action();
 				if(next->getName() == " BBT ")
 				{
 					totalBeer += 10;
+					brite.setDaysIn(0);
 				}
 				if(next->getName() == " FV1 ")
 				{
@@ -854,7 +855,7 @@ void Game::daysEnd()
 
 	if(decision == 2)
 	{
-		days = 20;
+		days = 200;
 	}
 }
 
