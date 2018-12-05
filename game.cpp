@@ -278,11 +278,11 @@ void Game::move()
 				//Make everything unactionable
 				brewery[6][1]->setActionable(false);
 				brewery[8][1]->setActionable(false);
-				getFV1()->setActionable(false);
-				getFV2()->setActionable(false);
-				getFV3()->setActionable(false);
-				getFV4()->setActionable(false);
-				getBBT()->setActionable(false);
+				next->getFV1()->setActionable(false);
+				next->getFV2()->setActionable(false);
+				next->getFV3()->setActionable(false);
+				next->getFV4()->setActionable(false);
+				next->getBBT()->setActionable(false);
 			}
 
 		}
@@ -672,37 +672,37 @@ void Game::daysEnd()
 void Game::printTanks()
 {
 	cout << "Tanks: " << endl;
-	cout << getFV1()->getName() << ": ";
-	getFV1()->printContents();
-	if(!(getFV1()->list.empty())
+	cout << brewery[1][1]->getFV1()->getName() << ": ";
+	brewery[1][1]->getFV1()->printContents();
+	if(!(brewery[1][1]->getFV1()->list.empty())
 	{
 		cout << "Days in tank: " << ferm1.getDaysIn() << endl;
 	}
 
-	cout << getFV2()->getName() << ": ";
-	getFV2()->printContents();
-	if(!(getFV2()->list.empty())
+	cout << brewery[1][1]->getFV2()->getName() << ": ";
+	brewery[1][1]->getFV2()->printContents();
+	if(!(brewery[1][1]->getFV2()->list.empty())
 	{
 		cout << "Days in tank: " << ferm2.getDaysIn() << endl;
 	}
 
-	cout << getFV3()->getName() << ": ";
-	getFV3()->printContents();
-	if(!(getFV3()->list.empty())
+	cout << brewery[1][1]->getFV3()->getName() << ": ";
+	brewery[1][1]->getFV3()->printContents();
+	if(!(brewery[1][1]->getFV3()->list.empty())
 	{
 		cout << "Days in tank: " << ferm3.getDaysIn() << endl;
 	}
 
-	cout << getFV4()->getName() << ": ";
-	getFV4()->printContents();
-	if(!(getFV4()->list.empty())
+	cout << brewery[1][1]->getFV4()->getName() << ": ";
+	brewery[1][1]->getFV4()->printContents();
+	if(!(brewery[1][1]->getFV4()->list.empty())
 	{
 		cout << "Days in tank: " << ferm4.getDaysIn() << endl;
 	}
 
-	cout << getBBT()->getName() << ": ";
-	getBBT()->printContents();
-	if(!(getBBT()->list.empty())
+	cout << brewery[1][1]->getBBT()->getName() << ": ";
+	brewery[1][1]->getBBT()->printContents();
+	if(!(brewery[1][1]->getBBT()->list.empty())
 	{
 		cout << "Days in tank: " << brite.getDaysIn() << endl;
 	}
