@@ -33,7 +33,7 @@ void Player::makeCeiling()
 
 void Player::addItem(string s)
 {
-	items.push(s);
+	items.push_back(s);
 	full = true;
 
 }
@@ -43,7 +43,7 @@ void Player::removeItem()
 	if(!items.empty())
 	{
 
-		items.pop();
+		items.pop_back();
 		full = false;
 	}
 }
