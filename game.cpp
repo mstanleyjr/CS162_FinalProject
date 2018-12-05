@@ -831,6 +831,8 @@ void Game::daysEnd()
 	//Make grain and hops actionable
 	brewery[6][1]->setActionable(true);
 	brewery[8][1]->setActionable(true);
+	//mill
+	brewery[3][1]->setActionable(true);
 
 
 	brewery[8][3]->action();
