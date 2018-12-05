@@ -774,7 +774,7 @@ void Game::play()
 
 		} while(!(brewery[8][3]->didLeave()));
 
-		//Days end
+		daysEnd();
 
 	}
 }
