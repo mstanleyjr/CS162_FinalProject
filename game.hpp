@@ -23,6 +23,7 @@ private:
 		int checkValidity(int, int);
 		int playerXCoord;
 		int playerYCoord;
+		int totalBeer;
 
 
 	public:
