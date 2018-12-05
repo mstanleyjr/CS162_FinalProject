@@ -37,7 +37,7 @@ void Tank::action()
 		this->setActionable(false);
 		//This might fail
 		Space* brewK = this->getEast();
-		brewk->setActionable(true);
+		brewK->setActionable(true);
 	}
 }
 
