@@ -255,6 +255,11 @@ void Game::move()
 						}
 					}
 				}
+				else if(!(brewer.hasItem()))
+				{
+					//This can only happen to the BK
+					next->action();
+				}
 			}
 			else
 			{
@@ -330,6 +335,11 @@ void Game::move()
 
 						}
 					}
+				}
+				else if(!(brewer.hasItem()))
+				{
+					//This can only happen to the BK
+					next->action();
 				}
 			}
 			else
@@ -407,6 +417,11 @@ void Game::move()
 
 						}
 					}
+				}
+				else if(!(brewer.hasItem()))
+				{
+					//This can only happen to the BK
+					next->action();
 				}
 			}
 			else
@@ -486,6 +501,11 @@ void Game::move()
 
 						}
 					}
+				}
+				else if(!(brewer.hasItem()))
+				{
+					//This can only happen to the BK
+					next->action();
 				}
 			}
 			else
