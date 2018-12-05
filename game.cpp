@@ -105,16 +105,19 @@ Game::Game()
 		string name = " FV" + to_string(i) + " ";
 		brewery[i][5]->setName(name);
 		Space* temp = brewery[i][5];
-		temp->setDaysNeeded(7);
-
 	}
+	ferm1->setDaysNeeded(7);
+	ferm2->setDaysNeeded(7);
+	ferm3->setDaysNeeded(7);
+	ferm4->setDaysNeeded(7);
+	brite->setDaysNeeded(3);
 
 	//Set KegT
 	delete brewery[5][5];
 	brewery[5][5] = NULL;
 	brewery[5][5] = new Tank(5, 5);
 	brewery[5][5]->setName(" BBT ");
-//	brewery[5][5]->setDaysNeeded(3);
+
 
 
 

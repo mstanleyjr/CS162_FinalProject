@@ -36,6 +36,11 @@ private:
 		int getPlayerX();
 		int getPlayerY();
 		void play();
+		Tank ferm1;
+		Tank ferm2;
+		Tank ferm3;
+		Tank ferm4;
+		Tank brite;
 
 
 };
