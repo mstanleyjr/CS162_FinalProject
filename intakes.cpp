@@ -66,6 +66,12 @@ void Intakes::action()
 		}
 		this->removeContents();
 		this->setActionable(false);
+		ferm1->setActionable(false);
+		ferm2->setActionable(false);
+		ferm3->setActionable(false);
+		ferm4->setActionable(false);
+		Space* brite = this->getBBT();
+		brite->setActionable(false);
 	}
 
 	if(this->getName() == "Mill ")

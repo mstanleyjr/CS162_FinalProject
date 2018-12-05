@@ -265,6 +265,10 @@ void Game::move()
 				{
 					//This can only happen to the BK
 					next->action();
+					//BK is inactionable so need to make FVs and Grain and hops
+					//doing FV's in intake.cpp
+					brewery[6][1]->setActionable(false);
+					brewery[8][1]->setActionable(false);
 				}
 			}
 			else
@@ -346,6 +350,8 @@ void Game::move()
 				{
 					//This can only happen to the BK
 					next->action();
+					brewery[6][1]->setActionable(false);
+					brewery[8][1]->setActionable(false);
 				}
 			}
 			else
@@ -428,6 +434,8 @@ void Game::move()
 				{
 					//This can only happen to the BK
 					next->action();
+					brewery[6][1]->setActionable(false);
+					brewery[8][1]->setActionable(false);
 				}
 			}
 			else
@@ -512,6 +520,8 @@ void Game::move()
 				{
 					//This can only happen to the BK
 					next->action();
+					brewery[6][1]->setActionable(false);
+					brewery[8][1]->setActionable(false);
 				}
 			}
 			else
