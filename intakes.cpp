@@ -23,7 +23,7 @@ void Intakes::makeCeiling()
 
 void Intakes::action()
 {
-	if(this->getName() == "BrewK" && (this->list.empty())
+	if(this->getName() == "BrewK" && this->list.empty())
 	{
 		cout << "You have put the ingredients in " << this->getName() << endl;
 		cout << "Please interact with the BrewK again to send your finished batch to a fermenter" << endl;
