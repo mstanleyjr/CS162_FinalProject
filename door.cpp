@@ -39,6 +39,7 @@ void Door::action()
 		{
 			leave = false;
 		}
+	}
 	else
 	{
 		leave = false;
